@@ -1,0 +1,37 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "npm",
+      "script": "dev",
+      "problemMatcher": [],
+      "label": "npm: dev",
+      "detail": "tsx server.ts"
+    },
+    {
+      "type": "npm",
+      "script": "build",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": [],
+      "label": "npm: build",
+      "detail": "vite build && esbuild server.ts ..."
+    },
+    {
+      "type": "npm",
+      "script": "lint",
+      "problemMatcher": ["$tsc"],
+      "label": "npm: lint",
+      "detail": "tsc --noEmit"
+    },
+    {
+      "type": "npm",
+      "script": "db:studio",
+      "problemMatcher": [],
+      "label": "npm: db:studio",
+      "detail": "prisma studio"
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+// Prisma Schema for M3M Plot Selling Website
+// Database: PostgreSQL
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model AdminUser {
+  id           String   @id @default(uuid())
+  name         String
+  email        String   @unique
+  passwordHash String   @map("password_hash")
+  isActive     Boolean  @default(true) @map("is_active")
+  createdAt    DateTime @default(now()) @map("created_at")
+  updatedAt    DateTime @updatedAt @map("updated_at")
+
+  @@map("admin_users")
+}
+
+model Location {
+  id        String   @id @default(uuid())
+  name      String
+  slug      String   @unique
+  city      String
+  state     String
+  imageUrl  String?  @map("image_url")
+  isActive  Boolean  @default(true) @map("is_active")
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+  sites     Site[]
+
+  @@map("locations")
+}
+
+model Site {
+  id            String      @id @default(uuid())
+  locationId    String      @map("location_id")
+  location      Location    @relation(fields: [locationId], references: [id], onDelete: Cascade)
+  name          String
+  slug          String      @unique
+  address       String
+  description   String      @db.Text
+  googleMapsUrl String?     @map("google_maps_url")
+  latitude      Float?
+  longitude     Float?
+  siteType      String      @default("Residential") @map("site_type")
+  startingPrice String?     @map("starting_price")
+  features      String?     @db.Text // JSON or comma-separated amenities
+  locationAdvantages String? @map("location_advantages") @db.Text // JSON or comma-separated location highlights/connectivity
+  videoUrl      String?     @map("video_url") @db.Text // Uploaded video file path or YouTube/Vimeo walkthrough URL
+  status        String      @default("Available") // "Available", "Sold", "Unavailable"
+  isPublished   Boolean     @default(true) @map("is_published")
+  createdAt     DateTime    @default(now()) @map("created_at")
+  updatedAt     DateTime    @updatedAt @map("updated_at")
+  images        SiteImage[]
+  plotSizes     PlotSize[]
+
+  @@map("sites")
+}
+
+model SiteImage {
+  id           String   @id @default(uuid())
+  siteId       String   @map("site_id")
+  site         Site     @relation(fields: [siteId], references: [id], onDelete: Cascade)
+  imageUrl     String   @map("image_url")
+  isCover      Boolean  @default(false) @map("is_cover")
+  displayOrder Int      @default(0) @map("display_order")
+  createdAt    DateTime @default(now()) @map("created_at")
+
+  @@map("site_images")
+}
+
+model PlotSize {
+  id        String   @id @default(uuid())
+  siteId    String   @map("site_id")
+  site      Site     @relation(fields: [siteId], references: [id], onDelete: Cascade)
+  plotSize  String   @map("plot_size") // e.g. "30 x 50 ft"
+  area      String   // e.g. "1500 sq.ft" or "166 sq.yards"
+  price     String   // e.g. "₹15,00,000"
+  status    String   @default("Available") // "Available" or "Sold"
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  @@map("plot_sizes")
+}
+
+model Setting {
+  id        String   @id @default(uuid())
+  key       String   @unique
+  value     String   @db.Text
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  @@map("settings")
+}
+
+model BlogPost {
+  id          String    @id @default(uuid())
+  title       String
+  slug        String    @unique
+  excerpt     String    @db.Text
+  content     String    @db.Text
+  coverImage  String?   @map("cover_image")
+  author      String    @default("DDJAY Advisory Desk")
+  category    String    @default("Policy & Guidelines")
+  readTime    String    @default("4 min read") @map("read_time")
+  tags        String?   @db.Text
+  isPublished Boolean   @default(true) @map("is_published")
+  publishedAt DateTime? @map("published_at")
+  createdAt   DateTime  @default(now()) @map("created_at")
+  updatedAt   DateTime  @updatedAt @map("updated_at")
+
+  @@map("blogs")
+}

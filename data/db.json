@@ -1,0 +1,1673 @@
+{
+  "adminUsers": [
+    {
+      "id": "admin-1",
+      "name": "M3M Executive Administrator",
+      "email": "admin@m3mproperties.com",
+      "passwordHash": "$2b$10$yDTUqFO0UZYlaGncpA5QEOw4ilNoy7mzQ64Dt/GEWRWZN8WDOM8pe",
+      "isActive": true,
+      "createdAt": "2026-09-18T19:43:00.828Z",
+      "updatedAt": "2026-09-18T19:43:00.828Z"
+    },
+    {
+      "id": "admin-2",
+      "name": "M3M Executive Administrator",
+      "email": "admin@m3mproperties.in",
+      "passwordHash": "$2b$10$yDTUqFO0UZYlaGncpA5QEOw4ilNoy7mzQ64Dt/GEWRWZN8WDOM8pe",
+      "isActive": true,
+      "createdAt": "2026-09-18T19:43:00.828Z",
+      "updatedAt": "2026-09-18T19:43:00.828Z"
+    }
+  ],
+  "locations": [
+    {
+      "id": "loc-golf-course-ext",
+      "name": "Golf Course Extension Road",
+      "slug": "golf-course-extension-road",
+      "city": "Gurugram",
+      "state": "Haryana",
+      "imageUrl": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1200&q=80",
+      "isActive": true,
+      "createdAt": "2026-09-18T19:43:00.828Z",
+      "updatedAt": "2026-09-18T19:43:00.828Z"
+    },
+    {
+      "id": "loc-spr",
+      "name": "Southern Peripheral Road (SPR)",
+      "slug": "southern-peripheral-road",
+      "city": "Gurugram",
+      "state": "Haryana",
+      "imageUrl": "https://images.unsplash.com/photo-1577495508048-b635879837f1?auto=format&fit=crop&w=1200&q=80",
+      "isActive": true,
+      "createdAt": "2026-09-18T19:43:00.828Z",
+      "updatedAt": "2026-09-18T19:43:00.828Z"
+    },
+    {
+      "id": "loc-dwarka-exp",
+      "name": "Dwarka Expressway Corridor",
+      "slug": "dwarka-expressway-corridor",
+      "city": "Gurugram",
+      "state": "Haryana",
+      "imageUrl": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80",
+      "isActive": true,
+      "createdAt": "2026-09-18T19:43:00.828Z",
+      "updatedAt": "2026-09-18T19:43:00.828Z"
+    },
+    {
+      "id": "loc-new-gurugram",
+      "name": "New Gurugram & Aravalli Foothills",
+      "slug": "new-gurugram-aravalli-foothills",
+      "city": "Gurugram",
+      "state": "Haryana",
+      "imageUrl": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
+      "isActive": true,
+      "createdAt": "2026-09-18T19:43:00.828Z",
+      "updatedAt": "2026-09-18T19:43:00.828Z"
+    },
+    {
+      "id": "loc-mg-road",
+      "name": "MG Road & Central Gurugram",
+      "slug": "mg-road-central-gurugram",
+      "city": "Gurugram",
+      "state": "Haryana",
+      "imageUrl": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80",
+      "isActive": true,
+      "createdAt": "2026-09-18T19:43:00.828Z",
+      "updatedAt": "2026-09-18T19:43:00.828Z"
+    }
+  ],
+  "sites": [
+    {
+      "id": "res-1",
+      "locationId": "loc-golf-course-ext",
+      "name": "M3M Altitude",
+      "slug": "m3m-altitude",
+      "address": "Sector 65, Golf Course Extension Road, Gurugram, Haryana 122018",
+      "description": "Ultra-luxury high-rise residences soaring high in Sector 65, Gurugram. Designed with futuristic architecture, cantilevered glass sky lounges, Olympic-length infinity pools, and panoramic 360-degree skyline views.",
+      "googleMapsUrl": "https://maps.google.com/?q=28.4116,77.0655",
+      "latitude": 28.4116,
+      "longitude": 77.0655,
+      "siteType": "Residential",
+      "startingPrice": "₹8.50 Cr",
+      "features": "Sky Club on 40th Floor, Private Elevator Lobbies, Olympic Infinity Pool, Smart Home Automation, Concierge Services, VRV Climate Control",
+      "locationAdvantages": "Direct Access to Golf Course Extn Rd, 15 Mins from Cyber Hub, 20 Mins from IGI Airport, Next to Top International Schools",
+      "status": "Available",
+      "isPublished": true,
+      "createdAt": "2026-09-18T19:43:00.828Z",
+      "updatedAt": "2026-09-18T19:43:00.828Z",
+      "images": [
+        {
+          "id": "img-res-1-1",
+          "siteId": "res-1",
+          "imageUrl": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1200&q=80",
+          "isCover": true,
+          "displayOrder": 0,
+          "createdAt": "2026-09-18T19:43:00.828Z"
+        },
+        {
+          "id": "img-res-1-2",
+          "siteId": "res-1",
+          "imageUrl": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80",
+          "isCover": false,
+          "displayOrder": 1,
+          "createdAt": "2026-09-18T19:43:00.828Z"
+        }
+      ],
+      "plotSizes": [
+        {
+          "id": "ps-res-1-1",
+          "siteId": "res-1",
+          "plotSize": "4 BHK Ultra Luxury",
+          "area": "3,850 sq.ft",
+          "price": "₹8.50 Cr",
+          "status": "Available",
+          "createdAt": "2026-09-18T19:43:00.828Z",
+          "updatedAt": "2026-09-18T19:43:00.828Z"
+        },
+        {
+          "id": "ps-res-1-2",
+          "siteId": "res-1",
+          "plotSize": "4.5 BHK Presidential Penthouse",
+          "area": "4,750 sq.ft",
+          "price": "₹11.20 Cr",
+          "status": "Available",
+          "createdAt": "2026-09-18T19:43:00.828Z",
+          "updatedAt": "2026-09-18T19:43:00.828Z"
+        }
+      ]
+    },
+    {
+      "id": "res-2",
+      "locationId": "loc-new-gurugram",
+      "name": "M3M Golf Hills",
+      "slug": "m3m-golf-hills",
+      "address": "Sector 79, Foothills of Aravallis, Gurugram, Haryana 122001",
+      "description": "Golf-themed luxury sanctuary nestled amidst scenic Aravalli hills in Sector 79. Enjoy lush green golf course fairways, multi-level clubhouse, and pure tranquil living.",
+      "googleMapsUrl": "https://maps.google.com/?q=28.3615,76.9742",
+      "latitude": 28.3615,
+      "longitude": 76.9742,
+      "siteType": "Residential",
+      "startingPrice": "₹1.95 Cr",
+      "features": "9-Hole Executive Golf Green, Aravalli Hill Facing Balconies, Grand Clubhouse, Temperature Controlled Pool, Tennis & Squash Courts",
+      "locationAdvantages": "5 Mins from NH-48 (Delhi-Jaipur Highway), 10 Mins from Dwarka Expressway, Surrounded by 4 Golf Courses",
+      "status": "Available",
+      "isPublished": true,
+      "createdAt": "2026-09-18T19:43:00.828Z",
+      "updatedAt": "2026-09-18T19:43:00.828Z",
+      "images": [
+        {
+          "id": "img-res-2-1",
+          "siteId": "res-2",
+          "imageUrl": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80",
+          "isCover": true,
+          "displayOrder": 0,
+          "createdAt": "2026-09-18T19:43:00.828Z"
+        }
+      ],
+      "plotSizes": [
+        {
+          "id": "ps-res-2-1",
+          "siteId": "res-2",
+          "plotSize": "2.5 BHK Golf Suite",
+          "area": "1,420 sq.ft",
+          "price": "₹1.95 Cr",
+          "status": "Available",
+          "createdAt": "2026-09-18T19:43:00.828Z",
+          "updatedAt": "2026-09-18T19:43:00.828Z"
+        },
+        {
+          "id": "ps-res-2-2",
+          "siteId": "res-2",
+          "plotSize": "3.5 BHK Premium Suite",
+          "area": "1,890 sq.ft",
+          "price": "₹2.65 Cr",
+          "status": "Available",
+          "createdAt": "2026-09-18T19:43:00.828Z",
+          "updatedAt": "2026-09-18T19:43:00.828Z"
+        }
+      ]
+    },
+    {
+      "id": "res-3",
+      "locationId": "loc-new-gurugram",
+      "name": "M3M Antalya Hills",
+      "slug": "m3m-antalya-hills",
+      "address": "Sector 79, Aravalli Corridor, Gurugram, Haryana 122001",
+      "description": "Low-rise luxury hill-living inspired by Mediterranean Antalya coastal villas. Features private basement lounges and private terrace decks amidst serene green nature.",
+      "googleMapsUrl": "https://maps.google.com/?q=28.3620,76.9750",
+      "latitude": 28.3620,
+      "longitude": 76.9750,
+      "siteType": "Residential",
+      "startingPrice": "₹1.35 Cr",
+      "features": "Low Rise Stilt + 4 Luxury Floors, Private Basement Home Office Space, Private Terrace Garden, Gated Resort Living",
+      "locationAdvantages": "Direct Access to SPR & CPR, 2 Mins from Hyatt Regency Gurugram, Scenic Aravalli Views",
+      "status": "Available",
+      "isPublished": true,
+      "createdAt": "2026-09-18T19:43:00.828Z",
+      "updatedAt": "2026-09-18T19:43:00.828Z",
+      "images": [
+        {
+          "id": "img-res-3-1",
+          "siteId": "res-3",
+          "imageUrl": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
+          "isCover": true,
+          "displayOrder": 0,
+          "createdAt": "2026-09-18T19:43:00.828Z"
+        }
+      ],
+      "plotSizes": [
+        {
+          "id": "ps-res-3-1",
+          "siteId": "res-3",
+          "plotSize": "2.5 BHK Low-Rise Floor",
+          "area": "1,150 sq.ft",
+          "price": "₹1.35 Cr",
+          "status": "Available",
+          "createdAt": "2026-09-18T19:43:00.828Z",
+          "updatedAt": "2026-09-18T19:43:00.828Z"
+        },
+        {
+          "id": "ps-res-3-2",
+          "siteId": "res-3",
+          "plotSize": "3.5 BHK Low-Rise Floor",
+          "area": "1,530 sq.ft",
+          "price": "₹1.85 Cr",
+          "status": "Available",
+          "createdAt": "2026-09-18T19:43:00.828Z",
+          "updatedAt": "2026-09-18T19:43:00.828Z"
+        }
+      ]
+    },
+    {
+      "id": "res-4",
+      "locationId": "loc-golf-course-ext",
+      "name": "M3M OPUS",
+      "slug": "m3m-opus",
+      "address": "Sector 67, Golf Course Extension Road, Gurugram, Haryana 122102",
+      "description": "An architectural masterpiece offering iconic luxury apartments with bespoke Italian marble finishing, wraps of lush landscapes, and elite private member clubhouses.",
+      "googleMapsUrl": "https://maps.google.com/?q=28.3980,77.0600",
+      "latitude": 28.3980,
+      "longitude": 77.0600,
+      "siteType": "Residential",
+      "startingPrice": "₹4.50 Cr",
+      "features": "Double Height Grand Entrance, Private Jacuzzi, Biophilic Architecture, High-Speed Mitsubishi Lifts",
+      "locationAdvantages": "Walking distance from M3M Urbana, Direct Metro Connectivity, Prime Golf Course Extn Road Corridor",
+      "status": "Available",
+      "isPublished": true,
+      "createdAt": "2026-09-18T19:43:00.828Z",
+      "updatedAt": "2026-09-18T19:43:00.828Z",
+      "images": [
+        {
+          "id": "img-res-4-1",
+          "siteId": "res-4",
+          "imageUrl": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80",
+          "isCover": true,
+          "displayOrder": 0,
+          "createdAt": "2026-09-18T19:43:00.828Z"
+        }
+      ],
+      "plotSizes": [
+        {
+          "id": "ps-res-4-1",
+          "siteId": "res-4",
+          "plotSize": "3 BHK Luxury",
+          "area": "2,450 sq.ft",
+          "price": "₹4.50 Cr",
+          "status": "Available",
+          "createdAt": "2026-09-18T19:43:00.828Z",
+          "updatedAt": "2026-09-18T19:43:00.828Z"
+        }
+      ]
+    },
+    {
+      "id": "res-5",
+      "locationId": "loc-dwarka-exp",
+      "name": "M3M Soulitude",
+      "slug": "m3m-soulitude",
+      "address": "Sector 89, New Gurugram, Dwarka Expressway Link, Gurugram, Haryana 122505",
+      "description": "Boutique low-rise independent luxury floors with contemporary lifestyle club, private basement workspace & terrace gardens in high-growth Sector 89.",
+      "googleMapsUrl": "https://maps.google.com/?q=28.4050,76.9420",
+      "latitude": 28.4050,
+      "longitude": 76.9420,
+      "siteType": "Residential",
+      "startingPrice": "₹1.20 Cr",
+      "features": "Independent Luxury Floors, Private Workspace Basement, Rooftop Sun Decks, Gated 5-Tier Security",
+      "locationAdvantages": "Direct Access to Dwarka Expressway & Pataudi Road, 10 Mins from IMT Manesar",
+      "status": "Available",
+      "isPublished": true,
+      "createdAt": "2026-09-18T19:43:00.828Z",
+      "updatedAt": "2026-09-18T19:43:00.828Z",
+      "images": [
+        {
+          "id": "img-res-5-1",
+          "siteId": "res-5",
+          "imageUrl": "https://images.unsplash.com/photo-1582407947304-fd86f028f716?auto=format&fit=crop&w=1200&q=80",
+          "isCover": true,
+          "displayOrder": 0,
+          "createdAt": "2026-09-18T19:43:00.828Z"
+        }
+      ],
+      "plotSizes": [
+        {
+          "id": "ps-res-5-1",
+          "siteId": "res-5",
+          "plotSize": "2.5 BHK Boutique Floor",
+          "area": "1,105 sq.ft",
+          "price": "₹1.20 Cr",
+          "status": "Available",
+          "createdAt": "2026-09-18T19:43:00.828Z",
+          "updatedAt": "2026-09-18T19:43:00.828Z"
+        },
+        {
+          "id": "ps-res-5-2",
+          "siteId": "res-5",
+          "plotSize": "3.5 BHK Boutique Floor",
+          "area": "1,425 sq.ft",
+          "price": "₹1.65 Cr",
+          "status": "Available",
+          "createdAt": "2026-09-18T19:43:00.828Z",
+          "updatedAt": "2026-09-18T19:43:00.828Z"
+        }
+      ]
+    },
+    {
+      "id": "res-6",
+      "locationId": "loc-golf-course-ext",
+      "name": "M3M Fairway West",
+      "slug": "m3m-fairway-west",
+      "address": "Sector 65, Golf Course Extension Road, Gurugram, Haryana 122018",
+      "description": "Part of the iconic 75-acre M3M Golfestate luxury development. Front facing fairway greens, world-class golf academy, and ultra-plush interiors.",
+      "googleMapsUrl": "https://maps.google.com/?q=28.4120,77.0660",
+      "latitude": 28.4120,
+      "longitude": 77.0660,
+      "siteType": "Residential",
+      "startingPrice": "₹6.80 Cr",
+      "features": "9-Hole Reversible Golf Course, 1 Lac+ Sq.Ft Clubhouse, Concierge Services, Helipad Facility",
+      "locationAdvantages": "Prime Sector 65, Immediate Access to South Delhi via Golf Course Road",
+      "status": "Available",
+      "isPublished": true,
+      "createdAt": "2026-09-18T19:43:00.828Z",
+      "updatedAt": "2026-09-18T19:43:00.828Z",
+      "images": [
+        {
+          "id": "img-res-6-1",
+          "siteId": "res-6",
+          "imageUrl": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1200&q=80",
+          "isCover": true,
+          "displayOrder": 0,
+          "createdAt": "2026-09-18T19:43:00.828Z"
+        }
+      ],
+      "plotSizes": [
+        {
+          "id": "ps-res-6-1",
+          "siteId": "res-6",
+          "plotSize": "3 BHK Fairway View",
+          "area": "3,000 sq.ft",
+          "price": "₹6.80 Cr",
+          "status": "Available",
+          "createdAt": "2026-09-18T19:43:00.828Z",
+          "updatedAt": "2026-09-18T19:43:00.828Z"
+        }
+      ]
+    },
+    {
+      "id": "res-7",
+      "locationId": "loc-golf-course-ext",
+      "name": "M3M Skycity",
+      "slug": "m3m-skycity",
+      "address": "Sector 65, Golf Course Extension Road, Gurugram, Haryana 122018",
+      "description": "Seamlessly integrated high-street living where luxury residences rise right above premier retail promenades, multiplexes, and gourmet fine-dining avenues.",
+      "googleMapsUrl": "https://maps.google.com/?q=28.4110,77.0670",
+      "latitude": 28.4110,
+      "longitude": 77.0670,
+      "siteType": "Residential",
+      "startingPrice": "₹3.20 Cr",
+      "features": "Direct Retail Mall Access, Sky Deck Lounge, Infinity Edge Swimming Pool, Fitness Center",
+      "locationAdvantages": "Zero km from Sector 65 Retail Hub, 5 Mins from Metro Station",
+      "status": "Available",
+      "isPublished": true,
+      "createdAt": "2026-09-18T19:43:00.828Z",
+      "updatedAt": "2026-09-18T19:43:00.828Z",
+      "images": [
+        {
+          "id": "img-res-7-1",
+          "siteId": "res-7",
+          "imageUrl": "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1200&q=80",
+          "isCover": true,
+          "displayOrder": 0,
+          "createdAt": "2026-09-18T19:43:00.828Z"
+        }
+      ],
+      "plotSizes": [
+        {
+          "id": "ps-res-7-1",
+          "siteId": "res-7",
+          "plotSize": "2 BHK Sky Suite",
+          "area": "1,310 sq.ft",
+          "price": "₹3.20 Cr",
+          "status": "Available",
+          "createdAt": "2026-09-18T19:43:00.828Z",
+          "updatedAt": "2026-09-18T19:43:00.828Z"
+        },
+        {
+          "id": "ps-res-7-2",
+          "siteId": "res-7",
+          "plotSize": "3 BHK Sky Suite",
+          "area": "1,820 sq.ft",
+          "price": "₹4.40 Cr",
+          "status": "Available",
+          "createdAt": "2026-09-18T19:43:00.828Z",
+          "updatedAt": "2026-09-18T19:43:00.828Z"
+        }
+      ]
+    },
+    {
+      "id": "res-8",
+      "locationId": "loc-golf-course-ext",
+      "name": "M3M Polo Suites",
+      "slug": "m3m-polo-suites",
+      "address": "Sector 65, Golf Course Extension Road, Gurugram, Haryana 122018",
+      "description": "Aristocratic polo-themed suites exuding royalty, bespoke equine artwork, polo lounge, and exclusive butler services for distinguished connoisseurs.",
+      "googleMapsUrl": "https://maps.google.com/?q=28.4125,77.0650",
+      "latitude": 28.4125,
+      "longitude": 77.0650,
+      "siteType": "Residential",
+      "startingPrice": "₹9.50 Cr",
+      "features": "Polo Themed Clubhouse, Private Riding Academy Access, Concierge Butler Service, Designer Marble Interiors",
+      "locationAdvantages": "Center of Golf Course Extension Road, Ultra-High Net Worth Neighborhood",
+      "status": "Available",
+      "isPublished": true,
+      "createdAt": "2026-09-18T19:43:00.828Z",
+      "updatedAt": "2026-09-18T19:43:00.828Z",
+      "images": [
+        {
+          "id": "img-res-8-1",
+          "siteId": "res-8",
+          "imageUrl": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1200&q=80",
+          "isCover": true,
+          "displayOrder": 0,
+          "createdAt": "2026-09-18T19:43:00.828Z"
+        }
+      ],
+      "plotSizes": [
+        {
+          "id": "ps-res-8-1",
+          "siteId": "res-8",
+          "plotSize": "4 BHK Polo Suite",
+          "area": "4,010 sq.ft",
+          "price": "₹9.50 Cr",
+          "status": "Available",
+          "createdAt": "2026-09-18T19:43:00.828Z",
+          "updatedAt": "2026-09-18T19:43:00.828Z"
+        }
+      ]
+    },
+    {
+      "id": "res-9",
+      "locationId": "loc-golf-course-ext",
+      "name": "M3M Merlin",
+      "slug": "m3m-merlin",
+      "address": "Sector 67, Golf Course Extension Road, Gurugram, Haryana 122102",
+      "description": "Singapore-style international condominium living featuring lush tropical green landscapes, cantilevered balconies, and a world-class clubhouse.",
+      "googleMapsUrl": "https://maps.google.com/?q=28.3975,77.0620",
+      "latitude": 28.3975,
+      "longitude": 77.0620,
+      "siteType": "Residential",
+      "startingPrice": "₹3.80 Cr",
+      "features": "Singapore Style Design, Reflexology Paths, Multi-Cuisine Cafe, 24/7 Power Backup, Heated Indoor Pool",
+      "locationAdvantages": "Walking distance from Sector 67 commercial hub, 20 Mins from Cyber City",
+      "status": "Available",
+      "isPublished": true,
+      "createdAt": "2026-09-18T19:43:00.828Z",
+      "updatedAt": "2026-09-18T19:43:00.828Z",
+      "images": [
+        {
+          "id": "img-res-9-1",
+          "siteId": "res-9",
+          "imageUrl": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80",
+          "isCover": true,
+          "displayOrder": 0,
+          "createdAt": "2026-09-18T19:43:00.828Z"
+        }
+      ],
+      "plotSizes": [
+        {
+          "id": "ps-res-9-1",
+          "siteId": "res-9",
+          "plotSize": "3 BHK Singapore Luxury",
+          "area": "2,050 sq.ft",
+          "price": "₹3.80 Cr",
+          "status": "Available",
+          "createdAt": "2026-09-18T19:43:00.828Z",
+          "updatedAt": "2026-09-18T19:43:00.828Z"
+        }
+      ]
+    },
+    {
+      "id": "res-10",
+      "locationId": "loc-golf-course-ext",
+      "name": "M3M Latitude",
+      "slug": "m3m-latitude",
+      "address": "Sector 65, Golf Course Extension Road, Gurugram, Haryana 122018",
+      "description": "Iconic 42-storey crystal tower topped with a crystalline rooftop observatory & sky club offering an elevated lifestyle of unprecedented distinction.",
+      "googleMapsUrl": "https://maps.google.com/?q=28.4118,77.0645",
+      "latitude": 28.4118,
+      "longitude": 77.0645,
+      "siteType": "Residential",
+      "startingPrice": "₹5.50 Cr",
+      "features": "42-Storey Crystal Tower, Rooftop Crystal Sky Club, High-Speed Capsule Lifts, Infinity Pool",
+      "locationAdvantages": "Prime Sector 65 Junction, Next to M3M 65th Avenue High Street",
+      "status": "Available",
+      "isPublished": true,
+      "createdAt": "2026-09-18T19:43:00.828Z",
+      "updatedAt": "2026-09-18T19:43:00.828Z",
+      "images": [
+        {
+          "id": "img-res-10-1",
+          "siteId": "res-10",
+          "imageUrl": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1200&q=80",
+          "isCover": true,
+          "displayOrder": 0,
+          "createdAt": "2026-09-18T19:43:00.828Z"
+        }
+      ],
+      "plotSizes": [
+        {
+          "id": "ps-res-10-1",
+          "siteId": "res-10",
+          "plotSize": "3 BHK Sky Residence",
+          "area": "2,499 sq.ft",
+          "price": "₹5.50 Cr",
+          "status": "Available",
+          "createdAt": "2026-09-18T19:43:00.828Z",
+          "updatedAt": "2026-09-18T19:43:00.828Z"
+        }
+      ]
+    },
+    {
+      "id": "res-11",
+      "locationId": "loc-dwarka-exp",
+      "name": "M3M Woodshire",
+      "slug": "m3m-woodshire",
+      "address": "Sector 107, Dwarka Expressway, Gurugram, Haryana 122017",
+      "description": "Vibrant residential sanctuary spread over 19 acres with 80% open lush greenery right on the Dwarka Expressway corridor near Delhi border.",
+      "googleMapsUrl": "https://maps.google.com/?q=28.5120,77.0120",
+      "latitude": 28.5120,
+      "longitude": 77.0120,
+      "siteType": "Residential",
+      "startingPrice": "₹1.80 Cr",
+      "features": "80% Open Greens, Central Park with Water Bodies, Grand Clubhouse, Badminton Courts, 3-Tier Security",
+      "locationAdvantages": "Zero km from Delhi Border, 15 Mins from IGI Airport T3, 5 Mins from Yashobhoomi Convention Center",
+      "status": "Available",
+      "isPublished": true,
+      "createdAt": "2026-09-18T19:43:00.828Z",
+      "updatedAt": "2026-09-18T19:43:00.828Z",
+      "images": [
+        {
+          "id": "img-res-11-1",
+          "siteId": "res-11",
+          "imageUrl": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80",
+          "isCover": true,
+          "displayOrder": 0,
+          "createdAt": "2026-09-18T19:43:00.828Z"
+        }
+      ],
+      "plotSizes": [
+        {
+          "id": "ps-res-11-1",
+          "siteId": "res-11",
+          "plotSize": "2 BHK Green Home",
+          "area": "1,366 sq.ft",
+          "price": "₹1.80 Cr",
+          "status": "Available",
+          "createdAt": "2026-09-18T19:43:00.828Z",
+          "updatedAt": "2026-09-18T19:43:00.828Z"
+        },
+        {
+          "id": "ps-res-11-2",
+          "siteId": "res-11",
+          "plotSize": "3 BHK Luxury",
+          "area": "1,943 sq.ft",
+          "price": "₹2.50 Cr",
+          "status": "Available",
+          "createdAt": "2026-09-18T19:43:00.828Z",
+          "updatedAt": "2026-09-18T19:43:00.828Z"
+        }
+      ]
+    },
+    {
+      "id": "res-12",
+      "locationId": "loc-golf-course-ext",
+      "name": "M3M Marina",
+      "slug": "m3m-marina",
+      "address": "Sector 68, Sohna Road - Golf Course Extn Link, Gurugram, Haryana 122101",
+      "description": "Marina-style waterfront themed residential paradise with sparkling artificial lake, sandy beach deck, and resort ambiance in Sector 68.",
+      "googleMapsUrl": "https://maps.google.com/?q=28.3890,77.0450",
+      "latitude": 28.3890,
+      "longitude": 77.0450,
+      "siteType": "Residential",
+      "startingPrice": "₹2.20 Cr",
+      "features": "Waterfront Promenade, Marina Beach Club, Floating Gazebos, Jogging Track, Sun Loungers",
+      "locationAdvantages": "5 Mins from Sohna Elevated Road, Connected to SPR & Golf Course Extn Rd",
+      "status": "Available",
+      "isPublished": true,
+      "createdAt": "2026-09-18T19:43:00.828Z",
+      "updatedAt": "2026-09-18T19:43:00.828Z",
+      "images": [
+        {
+          "id": "img-res-12-1",
+          "siteId": "res-12",
+          "imageUrl": "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1200&q=80",
+          "isCover": true,
+          "displayOrder": 0,
+          "createdAt": "2026-09-18T19:43:00.828Z"
+        }
+      ],
+      "plotSizes": [
+        {
+          "id": "ps-res-12-1",
+          "siteId": "res-12",
+          "plotSize": "2 BHK Waterfront",
+          "area": "1,260 sq.ft",
+          "price": "₹2.20 Cr",
+          "status": "Available",
+          "createdAt": "2026-09-18T19:43:00.828Z",
+          "updatedAt": "2026-09-18T19:43:00.828Z"
+        },
+        {
+          "id": "ps-res-12-2",
+          "siteId": "res-12",
+          "plotSize": "3 BHK Waterfront",
+          "area": "1,650 sq.ft",
+          "price": "₹2.90 Cr",
+          "status": "Available",
+          "createdAt": "2026-09-18T19:43:00.828Z",
+          "updatedAt": "2026-09-18T19:43:00.828Z"
+        }
+      ]
+    },
+    {
+      "id": "res-13",
+      "locationId": "loc-golf-course-ext",
+      "name": "M3M St. Andrews",
+      "slug": "m3m-st-andrews",
+      "address": "Sector 65, Golf Course Extension Road, Gurugram, Haryana 122018",
+      "description": "The ultimate benchmark in ultra-luxury golf residences with private lift lobbies opening directly into 4 & 5 BHK bespoke mansions with 10-foot ceilings.",
+      "googleMapsUrl": "https://maps.google.com/?q=28.4128,77.0658",
+      "latitude": 28.4128,
+      "longitude": 77.0658,
+      "siteType": "Residential",
+      "startingPrice": "₹12.50 Cr",
+      "features": "Direct Private Elevator Access, 10-Foot Ceiling Clearances, Scotch Bar & Cigar Lounge, Spa & Wellness Sanctuary",
+      "locationAdvantages": "Centerpiece of M3M Golfestate, Gurugram's Most Coveted Luxury Address",
+      "status": "Available",
+      "isPublished": true,
+      "createdAt": "2026-09-18T19:43:00.828Z",
+      "updatedAt": "2026-09-18T19:43:00.828Z",
+      "images": [
+        {
+          "id": "img-res-13-1",
+          "siteId": "res-13",
+          "imageUrl": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1200&q=80",
+          "isCover": true,
+          "displayOrder": 0,
+          "createdAt": "2026-09-18T19:43:00.828Z"
+        }
+      ],
+      "plotSizes": [
+        {
+          "id": "ps-res-13-1",
+          "siteId": "res-13",
+          "plotSize": "4 BHK Golf Mansion",
+          "area": "6,171 sq.ft",
+          "price": "₹12.50 Cr",
+          "status": "Available",
+          "createdAt": "2026-09-18T19:43:00.828Z",
+          "updatedAt": "2026-09-18T19:43:00.828Z"
+        }
+      ]
+    },
+    {
+      "id": "res-14",
+      "locationId": "loc-golf-course-ext",
+      "name": "M3M SkySuites",
+      "slug": "m3m-skysuites",
+      "address": "Sector 65, Golf Course Extension Road, Gurugram, Haryana 122018",
+      "description": "Exclusive duplex sky mansions floating above the city clouds with private double-height plunge pools, cantilevered decks, and custom Italian fixtures.",
+      "googleMapsUrl": "https://maps.google.com/?q=28.4114,77.0662",
+      "latitude": 28.4114,
+      "longitude": 77.0662,
+      "siteType": "Residential",
+      "startingPrice": "₹14.00 Cr",
+      "features": "Private Double-Height Plunge Pool, Duplex Sky Mansion, Panoramic Skyline Decks, Valet & Chauffeur Services",
+      "locationAdvantages": "Top Floors of M3M Golfestate, Unrivalled Views of Golf Greens",
+      "status": "Available",
+      "isPublished": true,
+      "createdAt": "2026-09-18T19:43:00.828Z",
+      "updatedAt": "2026-09-18T19:43:00.828Z",
+      "images": [
+        {
+          "id": "img-res-14-1",
+          "siteId": "res-14",
+          "imageUrl": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80",
+          "isCover": true,
+          "displayOrder": 0,
+          "createdAt": "2026-09-18T19:43:00.828Z"
+        }
+      ],
+      "plotSizes": [
+        {
+          "id": "ps-res-14-1",
+          "siteId": "res-14",
+          "plotSize": "5 BHK Duplex Sky Mansion",
+          "area": "7,800 sq.ft",
+          "price": "₹14.00 Cr",
+          "status": "Available",
+          "createdAt": "2026-09-18T19:43:00.828Z",
+          "updatedAt": "2026-09-18T19:43:00.828Z"
+        }
+      ]
+    },
+    {
+      "id": "res-15",
+      "locationId": "loc-golf-course-ext",
+      "name": "M3M Panorama Suites",
+      "slug": "m3m-panorama-suites",
+      "address": "Sector 65, Golf Course Extension Road, Gurugram, Haryana 122018",
+      "description": "Limited edition 360-degree panoramic glass suites designed for supreme privacy, lavish space entertainment, and bespoke high-altitude luxury.",
+      "googleMapsUrl": "https://maps.google.com/?q=28.4122,77.0648",
+      "latitude": 28.4122,
+      "longitude": 77.0648,
+      "siteType": "Residential",
+      "startingPrice": "₹7.20 Cr",
+      "features": "360-Degree Panoramic Glass Walls, Private Wine Cellar Space, Master Suite with Walk-in Wardrobes, Private Gym",
+      "locationAdvantages": "Sector 65, Immediate proximity to Rapid Metro & Cyber City",
+      "status": "Available",
+      "isPublished": true,
+      "createdAt": "2026-09-18T19:43:00.828Z",
+      "updatedAt": "2026-09-18T19:43:00.828Z",
+      "images": [
+        {
+          "id": "img-res-15-1",
+          "siteId": "res-15",
+          "imageUrl": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1200&q=80",
+          "isCover": true,
+          "displayOrder": 0,
+          "createdAt": "2026-09-18T19:43:00.828Z"
+        }
+      ],
+      "plotSizes": [
+        {
+          "id": "ps-res-15-1",
+          "siteId": "res-15",
+          "plotSize": "4 BHK Panoramic Suite",
+          "area": "3,650 sq.ft",
+          "price": "₹7.20 Cr",
+          "status": "Available",
+          "createdAt": "2026-09-18T19:43:00.828Z",
+          "updatedAt": "2026-09-18T19:43:00.828Z"
+        }
+      ]
+    },
+    {
+      "id": "ret-1",
+      "locationId": "loc-mg-road",
+      "name": "M3M Jewel",
+      "slug": "m3m-jewel-retail",
+      "address": "Sector 25, MG Road, Gurugram, Haryana 122002",
+      "description": "Gurugram's sparkling crown jewel on MG Road. Ultra-luxury retail high-street, global flagship fashion houses, luxury cinema, and experiential dining avenues.",
+      "googleMapsUrl": "https://maps.google.com/?q=28.4800,77.0800",
+      "latitude": 28.4800,
+      "longitude": 77.0800,
+      "siteType": "Retail",
+      "startingPrice": "₹1.50 Cr",
+      "features": "Triple-Height Glass Atriums, Luxury Flagship Anchor Stores, 5-Star Food Court, Multiplex Theatres, Central Open Plazas",
+      "locationAdvantages": "Zero Metres from MG Road Metro, Cyber City Gate, 10 Mins from IGI Airport",
+      "status": "Available",
+      "isPublished": true,
+      "createdAt": "2026-09-18T19:43:00.828Z",
+      "updatedAt": "2026-09-18T19:43:00.828Z",
+      "images": [
+        {
+          "id": "img-ret-1-1",
+          "siteId": "ret-1",
+          "imageUrl": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1200&q=80",
+          "isCover": true,
+          "displayOrder": 0,
+          "createdAt": "2026-09-18T19:43:00.828Z"
+        }
+      ],
+      "plotSizes": [
+        {
+          "id": "ps-ret-1-1",
+          "siteId": "ret-1",
+          "plotSize": "Ground Floor Luxury Retail",
+          "area": "450 sq.ft",
+          "price": "₹2.80 Cr",
+          "status": "Available",
+          "createdAt": "2026-09-18T19:43:00.828Z",
+          "updatedAt": "2026-09-18T19:43:00.828Z"
+        },
+        {
+          "id": "ps-ret-1-2",
+          "siteId": "ret-1",
+          "plotSize": "First Floor Fashion Retail",
+          "area": "350 sq.ft",
+          "price": "₹1.50 Cr",
+          "status": "Available",
+          "createdAt": "2026-09-18T19:43:00.828Z",
+          "updatedAt": "2026-09-18T19:43:00.828Z"
+        }
+      ]
+    },
+    {
+      "id": "ret-2",
+      "locationId": "loc-golf-course-ext",
+      "name": "M3M Urbana",
+      "slug": "m3m-urbana",
+      "address": "Sector 67, Golf Course Extension Road, Gurugram, Haryana 122102",
+      "description": "California-style open boulevard commercial high-street offering boutique retail shops, high-footfall restaurants, vibrant courtyards, and entertainment zones.",
+      "googleMapsUrl": "https://maps.google.com/?q=28.3985,77.0610",
+      "latitude": 28.3985,
+      "longitude": 77.0610,
+      "siteType": "Retail",
+      "startingPrice": "₹95 Lakhs",
+      "features": "California Inspired Open-Sky Boulevards, High Footfall Anchor Outlets, Multi-Level Underground Parking",
+      "locationAdvantages": "Center of Golf Course Extension Road, Surrounded by 25,000+ Luxury Residences",
+      "status": "Available",
+      "isPublished": true,
+      "createdAt": "2026-09-18T19:43:00.828Z",
+      "updatedAt": "2026-09-18T19:43:00.828Z",
+      "images": [
+        {
+          "id": "img-ret-2-1",
+          "siteId": "ret-2",
+          "imageUrl": "https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=1200&q=80",
+          "isCover": true,
+          "displayOrder": 0,
+          "createdAt": "2026-09-18T19:43:00.828Z"
+        }
+      ],
+      "plotSizes": [
+        {
+          "id": "ps-ret-2-1",
+          "siteId": "ret-2",
+          "plotSize": "High-Street Retail Shop",
+          "area": "380 sq.ft",
+          "price": "₹95 Lakhs",
+          "status": "Available",
+          "createdAt": "2026-09-18T19:43:00.828Z",
+          "updatedAt": "2026-09-18T19:43:00.828Z"
+        }
+      ]
+    },
+    {
+      "id": "ret-3",
+      "locationId": "loc-spr",
+      "name": "M3M Broadway",
+      "slug": "m3m-broadway",
+      "address": "Sector 71, Southern Peripheral Road (SPR), Gurugram, Haryana 122004",
+      "description": "Grand 2-sided open commercial marvel on SPR featuring a 10-screen multiplex, high-street retail shops, gaming arenas, and food courts.",
+      "googleMapsUrl": "https://maps.google.com/?q=28.4020,77.0180",
+      "latitude": 28.4020,
+      "longitude": 77.0180,
+      "siteType": "Retail",
+      "startingPrice": "₹80 Lakhs",
+      "features": "10-Screen Multiplex by INOX/PVR, 150-Metre Wide Frontage on SPR, Open-Air Terraced Cafes",
+      "locationAdvantages": "Direct Access to Sohna Elevated Corridor, NH-48 & Golf Course Extn Link",
+      "status": "Available",
+      "isPublished": true,
+      "createdAt": "2026-09-18T19:43:00.828Z",
+      "updatedAt": "2026-09-18T19:43:00.828Z",
+      "images": [
+        {
+          "id": "img-ret-3-1",
+          "siteId": "ret-3",
+          "imageUrl": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1200&q=80",
+          "isCover": true,
+          "displayOrder": 0,
+          "createdAt": "2026-09-18T19:43:00.828Z"
+        }
+      ],
+      "plotSizes": [
+        {
+          "id": "ps-ret-3-1",
+          "siteId": "ret-3",
+          "plotSize": "Ground Floor Retail Showroom",
+          "area": "420 sq.ft",
+          "price": "₹1.40 Cr",
+          "status": "Available",
+          "createdAt": "2026-09-18T19:43:00.828Z",
+          "updatedAt": "2026-09-18T19:43:00.828Z"
+        }
+      ]
+    },
+    {
+      "id": "ret-4",
+      "locationId": "loc-golf-course-ext",
+      "name": "M3M 65th Avenue",
+      "slug": "m3m-65th-avenue",
+      "address": "Sector 65, Golf Course Extension Road, Gurugram, Haryana 122018",
+      "description": "One of NCR's largest high-street retail destinations spread across 14 acres. Designed with grand glass facades, outdoor musical fountains, and lifestyle zones.",
+      "googleMapsUrl": "https://maps.google.com/?q=28.4110,77.0650",
+      "latitude": 28.4110,
+      "longitude": 77.0650,
+      "siteType": "Retail",
+      "startingPrice": "₹1.10 Cr",
+      "features": "14-Acre High Street Retail Landmark, Double-Height Flagship Stores, PVR Multiplex Anchor, Vibrant Boulevard Walks",
+      "locationAdvantages": "Opposite M3M Golfestate, Heart of Golf Course Extension Road",
+      "status": "Available",
+      "isPublished": true,
+      "createdAt": "2026-09-18T19:43:00.828Z",
+      "updatedAt": "2026-09-18T19:43:00.828Z",
+      "images": [
+        {
+          "id": "img-ret-4-1",
+          "siteId": "ret-4",
+          "imageUrl": "https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=1200&q=80",
+          "isCover": true,
+          "displayOrder": 0,
+          "createdAt": "2026-09-18T19:43:00.828Z"
+        }
+      ],
+      "plotSizes": [
+        {
+          "id": "ps-ret-4-1",
+          "siteId": "ret-4",
+          "plotSize": "Double-Height Retail Showroom",
+          "area": "500 sq.ft",
+          "price": "₹1.75 Cr",
+          "status": "Available",
+          "createdAt": "2026-09-18T19:43:00.828Z",
+          "updatedAt": "2026-09-18T19:43:00.828Z"
+        }
+      ]
+    },
+    {
+      "id": "ret-5",
+      "locationId": "loc-spr",
+      "name": "M3M Prive73",
+      "slug": "m3m-prive73",
+      "address": "Sector 73, Southern Peripheral Road (SPR), Gurugram, Haryana 122004",
+      "description": "Pedestrianized 5-level retail promenade offering a seamless blend of open-sky shopping, sky decks, gourmet dining, and entertainment zones.",
+      "googleMapsUrl": "https://maps.google.com/?q=28.3990,77.0220",
+      "latitude": 28.3990,
+      "longitude": 77.0220,
+      "siteType": "Retail",
+      "startingPrice": "₹75 Lakhs",
+      "features": "5-Level Open Retail Concept, Glass Frontage Units, Continuous Pedestrian Walkway, Water Feature Fountains",
+      "locationAdvantages": "Direct Access to SPR, 2 Mins from Vatika Chowk",
+      "status": "Available",
+      "isPublished": true,
+      "createdAt": "2026-09-18T19:43:00.828Z",
+      "updatedAt": "2026-09-18T19:43:00.828Z",
+      "images": [
+        {
+          "id": "img-ret-5-1",
+          "siteId": "ret-5",
+          "imageUrl": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1200&q=80",
+          "isCover": true,
+          "displayOrder": 0,
+          "createdAt": "2026-09-18T19:43:00.828Z"
+        }
+      ],
+      "plotSizes": [
+        {
+          "id": "ps-ret-5-1",
+          "siteId": "ret-5",
+          "plotSize": "Boutique Retail Space",
+          "area": "300 sq.ft",
+          "price": "₹75 Lakhs",
+          "status": "Available",
+          "createdAt": "2026-09-18T19:43:00.828Z",
+          "updatedAt": "2026-09-18T19:43:00.828Z"
+        }
+      ]
+    },
+    {
+      "id": "ret-6",
+      "locationId": "loc-mg-road",
+      "name": "M3M Paragon57",
+      "slug": "m3m-paragon57",
+      "address": "Sector 57, Sushant Lok Phase 3, Gurugram, Haryana 122003",
+      "description": "High-street retail & lifestyle hub in densely populated Sector 57, boasting triple-height avenues, open dining spaces, and entertainment arenas.",
+      "googleMapsUrl": "https://maps.google.com/?q=28.4280,77.0750",
+      "latitude": 28.4280,
+      "longitude": 77.0750,
+      "siteType": "Retail",
+      "startingPrice": "₹85 Lakhs",
+      "features": "Triple-Height Atriums, Open Terrace Cafes, High Footfall Residential Catchment of 1 Lac+ Residents",
+      "locationAdvantages": "Heart of Sushant Lok 3, Close to Golf Course Road & Metro",
+      "status": "Available",
+      "isPublished": true,
+      "createdAt": "2026-09-18T19:43:00.828Z",
+      "updatedAt": "2026-09-18T19:43:00.828Z",
+      "images": [
+        {
+          "id": "img-ret-6-1",
+          "siteId": "ret-6",
+          "imageUrl": "https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=1200&q=80",
+          "isCover": true,
+          "displayOrder": 0,
+          "createdAt": "2026-09-18T19:43:00.828Z"
+        }
+      ],
+      "plotSizes": [
+        {
+          "id": "ps-ret-6-1",
+          "siteId": "ret-6",
+          "plotSize": "Ground Floor Retail",
+          "area": "350 sq.ft",
+          "price": "₹1.20 Cr",
+          "status": "Available",
+          "createdAt": "2026-09-18T19:43:00.828Z",
+          "updatedAt": "2026-09-18T19:43:00.828Z"
+        }
+      ]
+    },
+    {
+      "id": "ret-7",
+      "locationId": "loc-golf-course-ext",
+      "name": "M3M Route65",
+      "slug": "m3m-route65",
+      "address": "Sector 65, Golf Course Extension Road, Gurugram, Haryana 122018",
+      "description": "Futuristic commercial boulevard on Golf Course Extension Road featuring glass-clad retail cube shops, landscaped plazas, and vibrant rooftop restaurants.",
+      "googleMapsUrl": "https://maps.google.com/?q=28.4112,77.0652",
+      "latitude": 28.4112,
+      "longitude": 77.0652,
+      "siteType": "Retail",
+      "startingPrice": "₹90 Lakhs",
+      "features": "Futuristic Glass Cubes, High Street Open Plazas, Landscaped Water Cascades",
+      "locationAdvantages": "Directly connected to Golf Course Extn Rd, High Visibility Corner Plot",
+      "status": "Available",
+      "isPublished": true,
+      "createdAt": "2026-09-18T19:43:00.828Z",
+      "updatedAt": "2026-09-18T19:43:00.828Z",
+      "images": [
+        {
+          "id": "img-ret-7-1",
+          "siteId": "ret-7",
+          "imageUrl": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1200&q=80",
+          "isCover": true,
+          "displayOrder": 0,
+          "createdAt": "2026-09-18T19:43:00.828Z"
+        }
+      ],
+      "plotSizes": [
+        {
+          "id": "ps-ret-7-1",
+          "siteId": "ret-7",
+          "plotSize": "Boulevard Retail Shop",
+          "area": "340 sq.ft",
+          "price": "₹90 Lakhs",
+          "status": "Available",
+          "createdAt": "2026-09-18T19:43:00.828Z",
+          "updatedAt": "2026-09-18T19:43:00.828Z"
+        }
+      ]
+    },
+    {
+      "id": "ret-8",
+      "locationId": "loc-mg-road",
+      "name": "M3M Atrium57",
+      "slug": "m3m-atrium57",
+      "address": "Sector 57, Gurugram, Haryana 122003",
+      "description": "Boutique 3-sided open retail destination in Sector 57 designed for hypermarkets, fashion retail outlets, and multi-cuisine restaurant concepts.",
+      "googleMapsUrl": "https://maps.google.com/?q=28.4290,77.0760",
+      "latitude": 28.4290,
+      "longitude": 77.0760,
+      "siteType": "Retail",
+      "startingPrice": "₹70 Lakhs",
+      "features": "3-Sided Open Plot, Dedicated Hypermarket Anchor Floor, Direct Escalator Access to All Levels",
+      "locationAdvantages": "Connected to Golf Course Road, Sohna Road & Huda City Centre Metro",
+      "status": "Available",
+      "isPublished": true,
+      "createdAt": "2026-09-18T19:43:00.828Z",
+      "updatedAt": "2026-09-18T19:43:00.828Z",
+      "images": [
+        {
+          "id": "img-ret-8-1",
+          "siteId": "ret-8",
+          "imageUrl": "https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=1200&q=80",
+          "isCover": true,
+          "displayOrder": 0,
+          "createdAt": "2026-09-18T19:43:00.828Z"
+        }
+      ],
+      "plotSizes": [
+        {
+          "id": "ps-ret-8-1",
+          "siteId": "ret-8",
+          "plotSize": "Retail Space",
+          "area": "280 sq.ft",
+          "price": "₹70 Lakhs",
+          "status": "Available",
+          "createdAt": "2026-09-18T19:43:00.828Z",
+          "updatedAt": "2026-09-18T19:43:00.828Z"
+        }
+      ]
+    },
+    {
+      "id": "ret-9",
+      "locationId": "loc-spr",
+      "name": "M3M Corner Walk",
+      "slug": "m3m-corner-walk",
+      "address": "Sector 74, Southern Peripheral Road (SPR), Gurugram, Haryana 122004",
+      "description": "Corner commercial landmark located at the intersection of SPR & Golf Course Extn Road. Perfect for flagship retail showrooms and luxury dining.",
+      "googleMapsUrl": "https://maps.google.com/?q=28.3980,77.0190",
+      "latitude": 28.3980,
+      "longitude": 77.0190,
+      "siteType": "Retail",
+      "startingPrice": "₹85 Lakhs",
+      "features": "Corner Plot with Maximum Visibility, Multi-Tier Pedestrian Walkways, Drop-Off Zones",
+      "locationAdvantages": "Intersection of SPR & Golf Course Extn, 10 Mins from Rajiv Chowk",
+      "status": "Available",
+      "isPublished": true,
+      "createdAt": "2026-09-18T19:43:00.828Z",
+      "updatedAt": "2026-09-18T19:43:00.828Z",
+      "images": [
+        {
+          "id": "img-ret-9-1",
+          "siteId": "ret-9",
+          "imageUrl": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1200&q=80",
+          "isCover": true,
+          "displayOrder": 0,
+          "createdAt": "2026-09-18T19:43:00.828Z"
+        }
+      ],
+      "plotSizes": [
+        {
+          "id": "ps-ret-9-1",
+          "siteId": "ret-9",
+          "plotSize": "Corner Retail Space",
+          "area": "360 sq.ft",
+          "price": "₹85 Lakhs",
+          "status": "Available",
+          "createdAt": "2026-09-18T19:43:00.828Z",
+          "updatedAt": "2026-09-18T19:43:00.828Z"
+        }
+      ]
+    },
+    {
+      "id": "ret-10",
+      "locationId": "loc-golf-course-ext",
+      "name": "M3M Cosmopolitan",
+      "slug": "m3m-cosmopolitan",
+      "address": "Sector 66, Golf Course Extension Road, Gurugram, Haryana 122018",
+      "description": "Bespoke international retail and commercial plaza inspired by Los Angeles rodeo drive shopping districts with mist cooled open promenades.",
+      "googleMapsUrl": "https://maps.google.com/?q=28.4080,77.0630",
+      "latitude": 28.4080,
+      "longitude": 77.0630,
+      "siteType": "Retail",
+      "startingPrice": "₹1.15 Cr",
+      "features": "Mist Cooled Open Boulevards, Rodeo Drive Architecture, Rooftop Nightlife Lounges",
+      "locationAdvantages": "Golf Course Extension Road Sector 66, Fully Operational High-Footfall Plaza",
+      "status": "Available",
+      "isPublished": true,
+      "createdAt": "2026-09-18T19:43:00.828Z",
+      "updatedAt": "2026-09-18T19:43:00.828Z",
+      "images": [
+        {
+          "id": "img-ret-10-1",
+          "siteId": "ret-10",
+          "imageUrl": "https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=1200&q=80",
+          "isCover": true,
+          "displayOrder": 0,
+          "createdAt": "2026-09-18T19:43:00.828Z"
+        }
+      ],
+      "plotSizes": [
+        {
+          "id": "ps-ret-10-1",
+          "siteId": "ret-10",
+          "plotSize": "Operational Retail Unit",
+          "area": "410 sq.ft",
+          "price": "₹1.15 Cr",
+          "status": "Available",
+          "createdAt": "2026-09-18T19:43:00.828Z",
+          "updatedAt": "2026-09-18T19:43:00.828Z"
+        }
+      ]
+    },
+    {
+      "id": "ret-11",
+      "locationId": "loc-golf-course-ext",
+      "name": "M3M Tee Point",
+      "slug": "m3m-tee-point-retail",
+      "address": "Sector 65, Golf Course Extension Road, Gurugram, Haryana 122018",
+      "description": "Smart mixed-use development combining high-visibility ground floor retail shops with premium office suites on the upper floors in Sector 65.",
+      "googleMapsUrl": "https://maps.google.com/?q=28.4100,77.0640",
+      "latitude": 28.4100,
+      "longitude": 77.0640,
+      "siteType": "Retail",
+      "startingPrice": "₹65 Lakhs",
+      "features": "Split-Level Retail Design, Central Landscaped Plaza, Ample Multi-Level Parking",
+      "locationAdvantages": "Surrounded by Ultra-Luxury Condominiums on Golf Course Extn Rd",
+      "status": "Available",
+      "isPublished": true,
+      "createdAt": "2026-09-18T19:43:00.828Z",
+      "updatedAt": "2026-09-18T19:43:00.828Z",
+      "images": [
+        {
+          "id": "img-ret-11-1",
+          "siteId": "ret-11",
+          "imageUrl": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1200&q=80",
+          "isCover": true,
+          "displayOrder": 0,
+          "createdAt": "2026-09-18T19:43:00.828Z"
+        }
+      ],
+      "plotSizes": [
+        {
+          "id": "ps-ret-11-1",
+          "siteId": "ret-11",
+          "plotSize": "Ground Floor Retail",
+          "area": "300 sq.ft",
+          "price": "₹65 Lakhs",
+          "status": "Available",
+          "createdAt": "2026-09-18T19:43:00.828Z",
+          "updatedAt": "2026-09-18T19:43:00.828Z"
+        }
+      ]
+    },
+    {
+      "id": "ret-12",
+      "locationId": "loc-golf-course-ext",
+      "name": "M3M IFC Retail",
+      "slug": "m3m-ifc-retail",
+      "address": "Sector 66, Golf Course Extension Road, Gurugram, Haryana 122018",
+      "description": "High-end luxury retail & fine-dining destination integrated into the iconic M3M International Financial Center (IFC) skyscraper.",
+      "googleMapsUrl": "https://maps.google.com/?q=28.4090,77.0635",
+      "latitude": 28.4090,
+      "longitude": 77.0635,
+      "siteType": "Retail",
+      "startingPrice": "₹1.80 Cr",
+      "features": "Global Luxury Boutiques, Michelin-Style Dining Terrace, Grand Triple-Height Glass Façade",
+      "locationAdvantages": "Center of NCR Financial District on Golf Course Extension Road",
+      "status": "Available",
+      "isPublished": true,
+      "createdAt": "2026-09-18T19:43:00.828Z",
+      "updatedAt": "2026-09-18T19:43:00.828Z",
+      "images": [
+        {
+          "id": "img-ret-12-1",
+          "siteId": "ret-12",
+          "imageUrl": "https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=1200&q=80",
+          "isCover": true,
+          "displayOrder": 0,
+          "createdAt": "2026-09-18T19:43:00.828Z"
+        }
+      ],
+      "plotSizes": [
+        {
+          "id": "ps-ret-12-1",
+          "siteId": "ret-12",
+          "plotSize": "Luxury Retail Boutique",
+          "area": "450 sq.ft",
+          "price": "₹1.80 Cr",
+          "status": "Available",
+          "createdAt": "2026-09-18T19:43:00.828Z",
+          "updatedAt": "2026-09-18T19:43:00.828Z"
+        }
+      ]
+    },
+    {
+      "id": "ret-13",
+      "locationId": "loc-dwarka-exp",
+      "name": "M3M 84Market",
+      "slug": "m3m-84market",
+      "address": "Sector 84, Dwarka Expressway Corridor, Gurugram, Haryana 122004",
+      "description": "Vibrant neighborhood shopping market catering to tens of thousands of premium families in New Gurugram along the Dwarka Expressway.",
+      "googleMapsUrl": "https://maps.google.com/?q=28.4010,76.9620",
+      "latitude": 28.4010,
+      "longitude": 76.9620,
+      "siteType": "Retail",
+      "startingPrice": "₹55 Lakhs",
+      "features": "Low Maintenance Commercial High Street, Double-Height Shops, Drive-Through Facilities",
+      "locationAdvantages": "Direct Access from Dwarka Expressway & NH-48",
+      "status": "Available",
+      "isPublished": true,
+      "createdAt": "2026-09-18T19:43:00.828Z",
+      "updatedAt": "2026-09-18T19:43:00.828Z",
+      "images": [
+        {
+          "id": "img-ret-13-1",
+          "siteId": "ret-13",
+          "imageUrl": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1200&q=80",
+          "isCover": true,
+          "displayOrder": 0,
+          "createdAt": "2026-09-18T19:43:00.828Z"
+        }
+      ],
+      "plotSizes": [
+        {
+          "id": "ps-ret-13-1",
+          "siteId": "ret-13",
+          "plotSize": "High-Yield Retail Shop",
+          "area": "250 sq.ft",
+          "price": "₹55 Lakhs",
+          "status": "Available",
+          "createdAt": "2026-09-18T19:43:00.828Z",
+          "updatedAt": "2026-09-18T19:43:00.828Z"
+        }
+      ]
+    },
+    {
+      "id": "ret-14",
+      "locationId": "loc-golf-course-ext",
+      "name": "M3M Innovation Park",
+      "slug": "m3m-innovation-park",
+      "address": "Sector 68, SPR - Golf Course Extn Link, Gurugram, Haryana 122101",
+      "description": "Next-generation integrated business and retail ecosystem designed for tech enterprises, co-working studios, and lifestyle cafes.",
+      "googleMapsUrl": "https://maps.google.com/?q=28.3880,77.0460",
+      "latitude": 28.3880,
+      "longitude": 77.0460,
+      "siteType": "Retail",
+      "startingPrice": "₹60 Lakhs",
+      "features": "Tech-Integrated Smart Campus, Retail Showrooms, Open Green Plazas",
+      "locationAdvantages": "Proximity to Sohna Highway & Cyber Parks",
+      "status": "Available",
+      "isPublished": true,
+      "createdAt": "2026-09-18T19:43:00.828Z",
+      "updatedAt": "2026-09-18T19:43:00.828Z",
+      "images": [
+        {
+          "id": "img-ret-14-1",
+          "siteId": "ret-14",
+          "imageUrl": "https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=1200&q=80",
+          "isCover": true,
+          "displayOrder": 0,
+          "createdAt": "2026-09-18T19:43:00.828Z"
+        }
+      ],
+      "plotSizes": [
+        {
+          "id": "ps-ret-14-1",
+          "siteId": "ret-14",
+          "plotSize": "Commercial Space",
+          "area": "310 sq.ft",
+          "price": "₹60 Lakhs",
+          "status": "Available",
+          "createdAt": "2026-09-18T19:43:00.828Z",
+          "updatedAt": "2026-09-18T19:43:00.828Z"
+        }
+      ]
+    },
+    {
+      "id": "off-1",
+      "locationId": "loc-mg-road",
+      "name": "M3M Jewel Offices",
+      "slug": "m3m-jewel-offices",
+      "address": "Sector 25, MG Road, Gurugram, Haryana 122002",
+      "description": "Prestige Grade-A corporate office suites on MG Road with premium double-glazed acoustic facades, multi-tier security, and state-of-the-art business lounges.",
+      "googleMapsUrl": "https://maps.google.com/?q=28.4805,77.0805",
+      "latitude": 28.4805,
+      "longitude": 77.0805,
+      "siteType": "Office",
+      "startingPrice": "₹1.75 Cr",
+      "features": "Grade-A Corporate Tower, LEED Platinum Certification Standard, High-Speed Otis Elevators, Executive Boardrooms",
+      "locationAdvantages": "Walking Distance from MG Road Metro, 10 Mins from Airport, Cyber Hub Vicinity",
+      "status": "Available",
+      "isPublished": true,
+      "createdAt": "2026-09-18T19:43:00.828Z",
+      "updatedAt": "2026-09-18T19:43:00.828Z",
+      "images": [
+        {
+          "id": "img-off-1-1",
+          "siteId": "off-1",
+          "imageUrl": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80",
+          "isCover": true,
+          "displayOrder": 0,
+          "createdAt": "2026-09-18T19:43:00.828Z"
+        }
+      ],
+      "plotSizes": [
+        {
+          "id": "ps-off-1-1",
+          "siteId": "off-1",
+          "plotSize": "Executive Corporate Suite",
+          "area": "850 sq.ft",
+          "price": "₹1.75 Cr",
+          "status": "Available",
+          "createdAt": "2026-09-18T19:43:00.828Z",
+          "updatedAt": "2026-09-18T19:43:00.828Z"
+        },
+        {
+          "id": "ps-off-1-2",
+          "siteId": "off-1",
+          "plotSize": "Full Floor Corporate Office",
+          "area": "4,500 sq.ft",
+          "price": "₹9.20 Cr",
+          "status": "Available",
+          "createdAt": "2026-09-18T19:43:00.828Z",
+          "updatedAt": "2026-09-18T19:43:00.828Z"
+        }
+      ]
+    },
+    {
+      "id": "off-2",
+      "locationId": "loc-golf-course-ext",
+      "name": "M3M Tee Point Offices",
+      "slug": "m3m-tee-point-offices",
+      "address": "Sector 65, Golf Course Extension Road, Gurugram, Haryana 122018",
+      "description": "Modern boutique office spaces engineered for startup innovators, legal/consulting firms, and tech agencies looking for prime Golf Course Extension presence.",
+      "googleMapsUrl": "https://maps.google.com/?q=28.4105,77.0645",
+      "latitude": 28.4105,
+      "longitude": 77.0645,
+      "siteType": "Office",
+      "startingPrice": "₹65 Lakhs",
+      "features": "Flexible Office Layouts, Dedicated Corporate Entrance Lobbies, 100% Power Backup, Fibre-Optic Connectivity",
+      "locationAdvantages": "Heart of Golf Course Extension Road, Immediate connectivity to Rapid Metro",
+      "status": "Available",
+      "isPublished": true,
+      "createdAt": "2026-09-18T19:43:00.828Z",
+      "updatedAt": "2026-09-18T19:43:00.828Z",
+      "images": [
+        {
+          "id": "img-off-2-1",
+          "siteId": "off-2",
+          "imageUrl": "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80",
+          "isCover": true,
+          "displayOrder": 0,
+          "createdAt": "2026-09-18T19:43:00.828Z"
+        }
+      ],
+      "plotSizes": [
+        {
+          "id": "ps-off-2-1",
+          "siteId": "off-2",
+          "plotSize": "Boutique Office Suite",
+          "area": "450 sq.ft",
+          "price": "₹65 Lakhs",
+          "status": "Available",
+          "createdAt": "2026-09-18T19:43:00.828Z",
+          "updatedAt": "2026-09-18T19:43:00.828Z"
+        }
+      ]
+    },
+    {
+      "id": "off-3",
+      "locationId": "loc-spr",
+      "name": "M3M CFC",
+      "slug": "m3m-cfc",
+      "address": "Sector 72/74, Southern Peripheral Road (SPR), Gurugram, Haryana 122004",
+      "description": "City Financial Center (CFC) — A towering Grade-A commercial and financial district headquarters designed to host Fortune 500 multinationals and banking hubs.",
+      "googleMapsUrl": "https://maps.google.com/?q=28.3970,77.0180",
+      "latitude": 28.3970,
+      "longitude": 77.0180,
+      "siteType": "Office",
+      "startingPrice": "₹1.40 Cr",
+      "features": "Fortune 500 Corporate Standard, Helipad Access, Intelligent Building Management System, Multi-Level Parking",
+      "locationAdvantages": "Frontage on SPR, Connected to Sohna Highway, CPR & NH-48",
+      "status": "Available",
+      "isPublished": true,
+      "createdAt": "2026-09-18T19:43:00.828Z",
+      "updatedAt": "2026-09-18T19:43:00.828Z",
+      "images": [
+        {
+          "id": "img-off-3-1",
+          "siteId": "off-3",
+          "imageUrl": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80",
+          "isCover": true,
+          "displayOrder": 0,
+          "createdAt": "2026-09-18T19:43:00.828Z"
+        }
+      ],
+      "plotSizes": [
+        {
+          "id": "ps-off-3-1",
+          "siteId": "off-3",
+          "plotSize": "Corporate Floor Plate",
+          "area": "1,200 sq.ft",
+          "price": "₹1.40 Cr",
+          "status": "Available",
+          "createdAt": "2026-09-18T19:43:00.828Z",
+          "updatedAt": "2026-09-18T19:43:00.828Z"
+        }
+      ]
+    },
+    {
+      "id": "off-4",
+      "locationId": "loc-golf-course-ext",
+      "name": "M3M IFC",
+      "slug": "m3m-ifc-offices",
+      "address": "Sector 66, Golf Course Extension Road, Gurugram, Haryana 122018",
+      "description": "International Financial Center (IFC) — An iconic twin-tower architectural landmark designed by Chapman Taylor (UK) offering world-class corporate offices.",
+      "googleMapsUrl": "https://maps.google.com/?q=28.4095,77.0638",
+      "latitude": 28.4095,
+      "longitude": 77.0638,
+      "siteType": "Office",
+      "startingPrice": "₹2.20 Cr",
+      "features": "Twin Tower Iconic Skyscraper, Triple-Height Marble Grand Lobby, Chapman Taylor UK Architecture, Sky Terrace",
+      "locationAdvantages": "Center of Golf Course Extension Road, Directly Connected to Sector 55/56 Rapid Metro",
+      "status": "Available",
+      "isPublished": true,
+      "createdAt": "2026-09-18T19:43:00.828Z",
+      "updatedAt": "2026-09-18T19:43:00.828Z",
+      "images": [
+        {
+          "id": "img-off-4-1",
+          "siteId": "off-4",
+          "imageUrl": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80",
+          "isCover": true,
+          "displayOrder": 0,
+          "createdAt": "2026-09-18T19:43:00.828Z"
+        }
+      ],
+      "plotSizes": [
+        {
+          "id": "ps-off-4-1",
+          "siteId": "off-4",
+          "plotSize": "Prime Grade-A Office Suite",
+          "area": "1,100 sq.ft",
+          "price": "₹2.20 Cr",
+          "status": "Available",
+          "createdAt": "2026-09-18T19:43:00.828Z",
+          "updatedAt": "2026-09-18T19:43:00.828Z"
+        }
+      ]
+    },
+    {
+      "id": "srv-1",
+      "locationId": "loc-mg-road",
+      "name": "M3M 57Suites",
+      "slug": "m3m-57suites",
+      "address": "Sector 57, Sushant Lok Phase 3, Gurugram, Haryana 122003",
+      "description": "Ultra-luxury fully serviced 1 & 2 BHK suites managed by premier hospitality operators, offering five-star concierge services, private housekeeping, and high rental yields.",
+      "googleMapsUrl": "https://maps.google.com/?q=28.4285,77.0755",
+      "latitude": 28.4285,
+      "longitude": 77.0755,
+      "siteType": "Serviced Apartments",
+      "startingPrice": "₹1.15 Cr",
+      "features": "Fully Furnished 5-Star Suites, 24/7 Concierge & Housekeeping, Rooftop Infinity Pool, High Rental Yield Assurance, Dedicated Dining Lounge",
+      "locationAdvantages": "Center of Sector 57, 5 Mins from Golf Course Road, 10 Mins from Cyber City",
+      "status": "Available",
+      "isPublished": true,
+      "createdAt": "2026-09-18T19:43:00.828Z",
+      "updatedAt": "2026-09-18T19:43:00.828Z",
+      "images": [
+        {
+          "id": "img-srv-1-1",
+          "siteId": "srv-1",
+          "imageUrl": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1200&q=80",
+          "isCover": true,
+          "displayOrder": 0,
+          "createdAt": "2026-09-18T19:43:00.828Z"
+        },
+        {
+          "id": "img-srv-1-2",
+          "siteId": "srv-1",
+          "imageUrl": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
+          "isCover": false,
+          "displayOrder": 1,
+          "createdAt": "2026-09-18T19:43:00.828Z"
+        }
+      ],
+      "plotSizes": [
+        {
+          "id": "ps-srv-1-1",
+          "siteId": "srv-1",
+          "plotSize": "1 BHK Luxury Serviced Suite",
+          "area": "650 sq.ft",
+          "price": "₹1.15 Cr",
+          "status": "Available",
+          "createdAt": "2026-09-18T19:43:00.828Z",
+          "updatedAt": "2026-09-18T19:43:00.828Z"
+        },
+        {
+          "id": "ps-srv-1-2",
+          "siteId": "srv-1",
+          "plotSize": "2 BHK Presidential Serviced Suite",
+          "area": "1,150 sq.ft",
+          "price": "₹1.95 Cr",
+          "status": "Available",
+          "createdAt": "2026-09-18T19:43:00.828Z",
+          "updatedAt": "2026-09-18T19:43:00.828Z"
+        }
+      ]
+    }
+  ],
+  "settings": {
+    "company_name": "M3M Properties",
+    "whatsapp_number": "919876543210",
+    "phone_number": "+91 98765 43210",
+    "company_address": "M3M Experion Center, Golf Course Extension Road, Sector 65, Gurugram, Haryana - 122018",
+    "email": "concierge@m3mproperties.com",
+    "logo_url": "",
+    "business_hours": "Mon - Sun: 9:00 AM - 8:00 PM",
+    "hero_headline": "Magnificence in Men, Materials & Money – M3M Properties",
+    "hero_subheadline": "Discover iconic luxury residences, high-street retail promenades, Grade-A corporate towers & ultra-luxury serviced suites across Gurugram & NCR.",
+    "hero_stats": "[{\"label\":\"Sq.Ft Delivered\",\"value\":\"30M+\"},{\"label\":\"Iconic Landmarks\",\"value\":\"34+\"},{\"label\":\"Happy Families\",\"value\":\"15,000+\"},{\"label\":\"RERA Registered\",\"value\":\"100%\"}]",
+    "about_title": "Pioneering Luxury & Redefining NCR's Architectural Skyline",
+    "about_description": "M3M India stands for 'Magnificence in the Trinity of Men, Materials & Money'. Over the past two decades, M3M has emerged as one of India's fastest growing luxury real estate developers, transforming Gurugram into a world-class global metropolis.",
+    "about_mission": "Our vision is to craft architectural masterworks that merge cutting-edge global design, sustainable construction, unmatched lifestyle amenities, and exceptional investment value for discerning homeowners and corporate enterprises.",
+    "about_features": "[{\"title\":\"World-Class Global Architects\",\"desc\":\"Collaborations with world-renowned design firms including Chapman Taylor (UK), RSP (Singapore), and ARCOP.\"},{\"title\":\"Unmatched Prime Corridors\",\"desc\":\"Strategic landmark developments across Golf Course Extension Road, SPR, Dwarka Expressway, and MG Road.\"},{\"title\":\"Speed & Timely Delivery Track Record\",\"desc\":\"Proven milestone completion speed with over 30 Million square feet delivered to date.\"},{\"title\":\"100% Legal & RERA Compliant\",\"desc\":\"Complete regulatory transparency with approved blueprints, clear titles, and major bank financing partners.\"}]",
+    "faqs": "[{\"question\":\"What property categories are offered by M3M Properties?\",\"answer\":\"M3M Properties offers iconic developments across four core categories: Luxury Residential (Golfestate, Altitude, Golf Hills), High-Street Retail (M3M Jewel, 65th Avenue, Broadway, Urbana), Grade-A Corporate Offices (M3M IFC, CFC, Jewel Offices), and Luxury Serviced Apartments (M3M 57Suites).\"},{\"question\":\"Where are M3M projects located in Gurugram?\",\"answer\":\"M3M projects are strategically positioned along Gurugram's highest-growth corridors: Golf Course Extension Road (Sectors 65, 66, 67, 68), Southern Peripheral Road (Sectors 71, 73, 74), Dwarka Expressway (Sectors 84, 89, 107), and Central MG Road (Sector 25).\"},{\"question\":\"Are M3M properties approved by RERA?\",\"answer\":\"Yes, all M3M residential, commercial, office, and serviced suite projects are 100% registered with the Haryana Real Estate Regulatory Authority (HARERA) and approved by leading financial institutions including HDFC Bank, ICICI Bank, and SBI.\"}]"
+  },
+  "blogs": [
+    {
+      "id": "blog-1",
+      "title": "Why Golf Course Extension Road is Gurugram's Ultimate Luxury Investment Corridor",
+      "slug": "why-golf-course-extension-road-is-gurugrams-luxury-corridor",
+      "excerpt": "Analyzing the meteoric appreciation, infrastructure upgrades, Rapid Metro extensions, and high-density luxury residential projects along Golf Course Extn Road.",
+      "content": "## The Rise of Golf Course Extension Road\n\n**Golf Course Extension Road (GCER)** in Gurugram has solidified its position as the premier real estate investment corridor in Northern India. What was once a developing arterial road is now home to the country's most opulent residential condominiums, global financial centers, and high-street retail boulevards.\n\n---\n\n### 1. Architectural Landmarks & Grade-A Catchment\n\nDevelopments such as **M3M Golfestate**, **M3M Altitude**, **M3M IFC**, and **M3M 65th Avenue** have transformed the corridor into a modern cosmopolitan boulevard reminiscent of international hubs like Singapore or Dubai.\n\n---\n\n### 2. Multi-Modal Connectivity\n\n- **Rapid Metro Phase 2**: Direct link connecting Sector 55/56 with Cyber City and Delhi Metro.\n- **Signal-Free Underpasses**: Connecting Golf Course Road to NH-48 and IGI Airport in under 25 minutes.\n- **Proximity to Corporate Hubs**: Headquarters of multinational consulting, banking, and tech giants within a 5-10 minute commute.\n\n---\n\n### 3. Capital Appreciation & Rental Yields\n\nResidential units along Golf Course Extension Road have delivered consistent **18% to 24% annualized capital appreciation**, while retail high-street shops command steady rental yields of **7.5% to 9%** with long-term Fortune 500 leases.",
+      "coverImage": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1200&q=80",
+      "author": "M3M Luxury Investment Advisory",
+      "category": "Investment & Insights",
+      "readTime": "5 min read",
+      "tags": [
+        "Golf Course Extn Road",
+        "Luxury Real Estate",
+        "M3M Altitude",
+        "Gurugram Investment"
+      ],
+      "isPublished": true,
+      "publishedAt": "2026-09-20T10:00:00.000Z",
+      "createdAt": "2026-09-20T10:00:00.000Z",
+      "updatedAt": "2026-09-20T10:00:00.000Z"
+    },
+    {
+      "id": "blog-2",
+      "title": "High-Street Retail vs Mall Stores: Why M3M Retail Properties Outperform",
+      "slug": "high-street-retail-vs-traditional-malls-gurugram",
+      "excerpt": "Exploring why open-sky high-street retail concepts like M3M Jewel, M3M 65th Avenue, and M3M Broadway deliver superior footfalls and higher ROI.",
+      "content": "## The Evolution of Retail in Gurugram\n\nModern shoppers and global brands are rapidly pivoting away from enclosed traditional mall boxes in favor of **open-air, pedestrian-friendly high-street retail boulevards**.\n\n---\n\n### Key Advantages of M3M High-Street Retail\n\n1. **Double-Height Glass Façades**: Maximum brand visibility with customizable frontage.\n2. **Lower Common Area Maintenance (CAM)**: Significantly reduced operational and HVAC overheads compared to closed malls.\n3. **Drive-In Access & Open Boulevards**: Easy customer drop-offs and open courtyard dining options that attract high evening footfalls.\n4. **Zoned Entertainment**: Integration with multiplexes, gaming zones, and curated food trucks.",
+      "coverImage": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1200&q=80",
+      "author": "Commercial Asset Research Desk",
+      "category": "Commercial Retail",
+      "readTime": "4 min read",
+      "tags": [
+        "M3M Jewel",
+        "High-Street Retail",
+        "Commercial ROI",
+        "Gurugram Retail"
+      ],
+      "isPublished": true,
+      "publishedAt": "2026-09-22T10:00:00.000Z",
+      "createdAt": "2026-09-22T10:00:00.000Z",
+      "updatedAt": "2026-09-22T10:00:00.000Z"
+    },
+    {
+      "id": "blog-3",
+      "title": "The Rise of Luxury Serviced Suites: Exploring M3M 57Suites in Sector 57",
+      "slug": "rise-of-luxury-serviced-suites-m3m-57suites",
+      "excerpt": "Why managed 5-star serviced suites are becoming the preferred asset class for NRI investors seeking passive rental income and premium hospitality.",
+      "content": "## A New Era of Managed Real Estate Living\n\nServiced apartments combine the independence of a private luxury home with the five-star amenities of a luxury boutique hotel. With **M3M 57Suites** in Sector 57, Gurugram, investors can access a completely hands-off real estate asset backed by top-tier corporate tenant demand.",
+      "coverImage": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
+      "author": "Hospitality & Suites Desk",
+      "category": "Serviced Suites",
+      "readTime": "4 min read",
+      "tags": [
+        "M3M 57Suites",
+        "Serviced Apartments",
+        "Passive Income",
+        "Sector 57"
+      ],
+      "isPublished": true,
+      "publishedAt": "2026-09-25T10:00:00.000Z",
+      "createdAt": "2026-09-25T10:00:00.000Z",
+      "updatedAt": "2026-09-25T10:00:00.000Z"
+    }
+  ]
+}

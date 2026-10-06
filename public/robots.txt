@@ -1,0 +1,10 @@
+# Technical Development & Platform Architecture by Aero Logic Technologies
+# Website: https://www.aerologictechnologies.com
+
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /admin/*
+Disallow: /api/admin/*
+
+Sitemap: /sitemap.xml
