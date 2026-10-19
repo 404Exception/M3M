@@ -9,14 +9,14 @@ export const ContactPage: React.FC = () => {
 
   const whatsappUrl = getWhatsAppUrl(
     settings.whatsapp_number,
-    'Hello, I would like to get more information about M3M Properties (Residential, Retail, Office, Serviced Suites).'
+    'Hello, I would like to get more information about M3M Inventory (Residential, Retail, Office, Serviced Suites).'
   );
   const callUrl = getPhoneCallUrl(settings.phone_number);
 
   const contactSchema = {
     '@context': 'https://schema.org',
     '@type': 'ContactPage',
-    name: 'Contact M3M Properties Concierge',
+    name: 'Contact M3M Inventory Concierge',
     telephone: settings.phone_number,
     url: typeof window !== 'undefined' ? window.location.href : '',
     address: {
@@ -32,7 +32,7 @@ export const ContactPage: React.FC = () => {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-16 space-y-12">
       <SEO
-        title="Contact M3M Properties Concierge & Sales Gallery"
+        title="Contact M3M Inventory Concierge & Sales Gallery"
         description="Get in touch with our private concierge for exclusive M3M residential brochures, retail floor plans, and VIP Experion Center appointments."
         canonicalPath="/contact"
         schemaData={contactSchema}

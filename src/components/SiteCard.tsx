@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { MapPin, MessageCircle, ArrowRight, ShieldCheck, Building2, Layers } from 'lucide-react';
+import { MapPin, MessageCircle, ArrowRight, ShieldCheck, Building2, Layers, Crown } from 'lucide-react';
 import { Site } from '../types.js';
 import { useSettings } from '../context/SettingsContext.js';
 import { getWhatsAppUrl, generateSiteWhatsAppMessage } from '../utils/contact.js';
@@ -41,6 +41,8 @@ export const SiteCard: React.FC<SiteCardProps> = ({ site }) => {
         return 'bg-slate-800 text-amber-300 font-bold border border-amber-500/30';
       case 'serviced apartments':
         return 'bg-yellow-600/90 text-slate-950 font-bold border border-yellow-400';
+      case 'leasing':
+        return 'bg-emerald-700 text-amber-200 font-bold border border-emerald-500/50';
       default:
         return 'bg-slate-900 text-amber-400 font-bold border border-amber-500/30';
     }
@@ -58,7 +60,7 @@ export const SiteCard: React.FC<SiteCardProps> = ({ site }) => {
         />
 
         {/* Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/20 to-slate-950/40" />
+        <div className="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-slate-950/20 to-slate-950/40" />
 
         {/* Top Badges */}
         <div className="absolute top-3 left-3 flex flex-wrap gap-2">
@@ -78,13 +80,11 @@ export const SiteCard: React.FC<SiteCardProps> = ({ site }) => {
           </span>
         </div>
 
-        {/* Starting Price Pill */}
-        {site.startingPrice && (
-          <div className="absolute bottom-3 right-3 bg-slate-950/95 backdrop-blur-md border border-amber-500/40 text-white px-3 py-1.5 rounded-xl text-xs font-bold shadow-xl">
-            <span className="text-slate-400 font-normal mr-1 text-[10px] uppercase tracking-wider">Starts</span>
-            <span className="text-amber-400 text-sm font-black">{site.startingPrice}</span>
-          </div>
-        )}
+        {/* Confidential / Price on Request Badge */}
+        <div className="absolute bottom-3 right-3 bg-slate-950/90 backdrop-blur-md border border-amber-500/30 text-amber-400 px-3 py-1 rounded-lg text-xs font-semibold shadow-lg flex items-center gap-1.5">
+          <Crown className="w-3 h-3 text-amber-400" />
+          <span>Brochure on Request</span>
+        </div>
       </div>
 
       {/* Content */}

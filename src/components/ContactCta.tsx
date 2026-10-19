@@ -20,7 +20,7 @@ export const ContactCta: React.FC<ContactCtaProps> = ({
 
   const msg = siteName
     ? `Hello, I am interested in ${siteName}${locationName ? ` in ${locationName}` : ''}. Please share brochure and private visit details.`
-    : 'Hello, I am interested in exploring M3M Properties (Residential, Retail, Office, Serviced Suites). Please connect with me.';
+    : 'Hello, I am interested in exploring M3M Inventory (Residential, Retail, Office, Serviced Suites). Please connect with me.';
 
   const whatsappUrl = getWhatsAppUrl(settings.whatsapp_number, msg);
   const phoneUrl = getPhoneCallUrl(settings.phone_number);

@@ -68,7 +68,7 @@ export const BlogsPage: React.FC = () => {
   return (
     <div className="bg-slate-50 min-h-screen">
       <SEO
-        title="M3M Properties Real Estate Insights & Investment Guides"
+        title="M3M Inventory Real Estate Insights & Investment Guides"
         description="Authoritative research on luxury residential trends, high-street retail commercial yields, and Gurugram infrastructure growth by M3M."
         keywords="m3m blogs, gurugram real estate news, golf course extension road investment, m3m high street retail"
         canonicalPath="/blogs"

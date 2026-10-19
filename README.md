@@ -1,4 +1,4 @@
-# M3M Properties — Luxury Real Estate & Portfolio Management Portal
+# M3M Inventory — Luxury Real Estate & Portfolio Management Portal
 
 An ultra-luxury, full-stack real-estate portal and executive management system dedicated to **M3M India** iconic developments across prime Gurugram corridors (*Golf Course Extension Road, Southern Peripheral Road, Dwarka Expressway, Golf Course Road, and New Gurugram*).
 

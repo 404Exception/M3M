@@ -19,6 +19,12 @@ async function seed() {
 
   const dbData = JSON.parse(fs.readFileSync(dbJsonPath, 'utf-8'));
 
+  console.log('🧹 Cleaning existing site and blog data for clean seed...');
+  await prisma.plotSize.deleteMany({});
+  await prisma.siteImage.deleteMany({});
+  await prisma.site.deleteMany({});
+  await prisma.blogPost.deleteMany({});
+
   console.log('📦 Seeding Admin Users...');
   if (Array.isArray(dbData.adminUsers)) {
     for (const user of dbData.adminUsers) {
@@ -142,21 +148,24 @@ async function seed() {
       // Upsert plot sizes
       if (Array.isArray(site.plotSizes)) {
         for (const ps of site.plotSizes) {
+          const plotSizeVal = ps.plotSize || ps.dimensions || ps.size || 'Standard';
+          const areaVal = ps.area || ps.size || 'N/A';
+          const priceVal = ps.price || 'Price on Request';
           await prisma.plotSize.upsert({
             where: { id: ps.id },
             update: {
               siteId: site.id,
-              plotSize: ps.plotSize,
-              area: ps.area,
-              price: ps.price,
+              plotSize: plotSizeVal,
+              area: areaVal,
+              price: priceVal,
               status: ps.status || 'Available',
             },
             create: {
               id: ps.id,
               siteId: site.id,
-              plotSize: ps.plotSize,
-              area: ps.area,
-              price: ps.price,
+              plotSize: plotSizeVal,
+              area: areaVal,
+              price: priceVal,
               status: ps.status || 'Available',
               createdAt: ps.createdAt ? new Date(ps.createdAt) : new Date(),
               updatedAt: ps.updatedAt ? new Date(ps.updatedAt) : new Date(),

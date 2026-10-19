@@ -19,6 +19,7 @@ import {
 } from 'lucide-react';
 import { useSettings } from '../context/SettingsContext.js';
 import { getWhatsAppUrl, getPhoneCallUrl } from '../utils/contact.js';
+import { QuickEnquiryModal } from './QuickEnquiryModal.js';
 
 export const Header: React.FC = () => {
   const { settings } = useSettings();
@@ -26,6 +27,7 @@ export const Header: React.FC = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [corridorsDropdownOpen, setCorridorsDropdownOpen] = useState(false);
   const [categoriesDropdownOpen, setCategoriesDropdownOpen] = useState(false);
+  const [enquiryModalOpen, setEnquiryModalOpen] = useState(false);
 
   const handleLinkClick = () => {
     setMobileMenuOpen(false);
@@ -46,31 +48,37 @@ export const Header: React.FC = () => {
       name: 'Golf Course Extension Road',
       slug: 'golf-course-extension-road',
       sectors: 'Sector 65, 66, 67, 68',
-      highlights: 'Altitude, IFC Twin Towers, Urbana, 65th Avenue',
+      highlights: 'Altitude, Golfestate, IFC Towers, Urbana, 65th Avenue',
     },
     {
       name: 'Southern Peripheral Road (SPR)',
       slug: 'southern-peripheral-road',
-      sectors: 'Sector 71, 72, 73, 74',
-      highlights: 'Golf Hills, Antalya Hills, Broadway, Prive73',
+      sectors: 'Sector 71, 73, 74, 79',
+      highlights: 'Golf Hills, Antalya Hills, Broadway, Prive73, Lofts 74',
     },
     {
       name: 'Dwarka Expressway Corridor',
       slug: 'dwarka-expressway-corridor',
-      sectors: 'Sector 111, 113, 84',
-      highlights: 'M3M Crown, M3M Capital, 84Market',
+      sectors: 'Sector 111, 113, 114, 107',
+      highlights: 'M3M Crown, Capital, Mansion, Capital Walk, 114 Market',
     },
     {
-      name: 'MG Road & Cyber City Hub',
+      name: 'MG Road & Central Gurugram',
       slug: 'mg-road-central-gurugram',
       sectors: 'Sector 25, 57',
-      highlights: 'M3M Jewel, Paragon57, 57Suites, Atrium57',
+      highlights: 'M3M Jewel, Paragon57, 57Suites, Atrium57, Tee Point',
     },
     {
-      name: 'New Gurugram & Sector 84/89',
-      slug: 'new-gurugram-sector-84-89',
-      sectors: 'Sector 89, 79',
-      highlights: 'M3M Soulitude, Woodshire, Golfestate',
+      name: 'New Gurugram & Aravalli Foothills',
+      slug: 'new-gurugram-aravalli-foothills',
+      sectors: 'Sector 84, 89',
+      highlights: 'M3M Soulitude, Innovation Park, 84Market',
+    },
+    {
+      name: 'Noida Expressway & Sector 94',
+      slug: 'noida-expressway-sector-94',
+      sectors: 'Sector 94 (0 km Delhi)',
+      highlights: 'The Cullinan, Cullinan Avenue, Cullinan Suites',
     },
   ];
 
@@ -78,36 +86,43 @@ export const Header: React.FC = () => {
     {
       name: 'Ultra-Luxury Residences',
       slug: 'Residential',
-      count: '15 Landmarks',
+      count: '24 Landmarks',
       icon: HomeIcon,
-      desc: 'Altitude, Golf Hills, Antalya Hills, OPUS, Fairway West',
+      desc: 'Altitude, Golfestate, Cullinan, Crown, Capital, Mansion, OPUS',
     },
     {
       name: 'High-Street Retail',
       slug: 'Retail',
-      count: '14 Promenades',
+      count: '16 Promenades',
       icon: Store,
-      desc: 'Jewel, Urbana, Broadway, 65th Avenue, Paragon57',
+      desc: 'Jewel, 65th Avenue, Urbana, Broadway, Paragon57, Prive73',
     },
     {
       name: 'Grade-A Corporate Offices',
       slug: 'Office',
-      count: '4 Flagships',
+      count: '9 Flagships',
       icon: Briefcase,
-      desc: 'M3M Jewel Offices, Tee Point, CFC, IFC Towers',
+      desc: 'M3M IFC Twin Towers, Urbana Business Park, Jewel Suites, CFC',
     },
     {
       name: 'Managed Serviced Suites',
       slug: 'Serviced Apartments',
-      count: 'M3M 57Suites',
+      count: '6 Developments',
       icon: Building,
-      desc: 'Five-star managed serviced suites in Sector 57',
+      desc: '57Suites, Sky Lofts, My Den, Lofts 74, One Key, Cullinan Suites',
+    },
+    {
+      name: 'Institutional Leasing',
+      slug: 'Leasing',
+      count: '5 Portfolios',
+      icon: Layers,
+      desc: 'Retail Promenades, Corporate Floors, Gourmet Dining, SCO Plots',
     },
   ];
 
   const whatsappLink = getWhatsAppUrl(
     settings.whatsapp_number,
-    'Hello, I am interested in exploring M3M Properties (Residential, Retail, Office, Serviced Suites). Please connect with me.'
+    'Hello, I am interested in exploring M3M Inventory (Residential, Retail, Office, Serviced Suites). Please connect with me.'
   );
   const callLink = getPhoneCallUrl(settings.phone_number);
 
@@ -121,8 +136,8 @@ export const Header: React.FC = () => {
               <Crown className="w-3 h-3 text-amber-400" />
               M3M Official Developer Portfolio
             </span>
-            <span className="hidden sm:inline text-slate-600">•</span>
-            <span className="hidden sm:inline text-slate-400 text-[11px] tracking-wide">Magnificence in Men, Materials & Money</span>
+            {/* <span className="hidden sm:inline text-slate-600">•</span>
+            <span className="hidden sm:inline text-slate-400 text-[11px] tracking-wide">Magnificence in Men, Materials & Money</span> */}
           </div>
           <div className="flex items-center gap-4 text-slate-300 text-[11px]">
             <span className="hidden md:flex items-center gap-1 text-slate-400">
@@ -140,26 +155,26 @@ export const Header: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link to="/" onClick={handleLinkClick} className="flex items-center gap-3 group">
-            <div className="w-11 h-11 rounded-xl bg-gradient-to-tr from-amber-500 via-amber-600 to-amber-700 flex items-center justify-center text-slate-950 font-black text-xl shadow-md shadow-amber-500/20 group-hover:scale-105 transition-transform overflow-hidden border border-amber-400/30">
-              {settings.logo_url ? (
-                <img src={settings.logo_url} alt={settings.company_name || 'M3M Properties'} className="w-full h-full object-cover" />
-              ) : (
-                <span className="tracking-tighter font-extrabold text-slate-950">M3M</span>
-              )}
+          <Link to="/" onClick={handleLinkClick} className="flex items-center gap-3 group shrink-0">
+            <div className="h-12 px-3.5 py-1 bg-white rounded-xl shadow-lg shadow-black/40 border border-amber-400/40 group-hover:border-amber-400 transition-all flex items-center justify-center shrink-0">
+              <img
+                src={settings.logo_url || '/logo/m3m-logo.png'}
+                alt={settings.company_name || 'M3M Properties'}
+                className="h-8 sm:h-9 w-auto max-w-[125px] object-contain transition-transform group-hover:scale-105"
+              />
             </div>
-            <div>
-              <span className="block font-serif-luxury font-bold text-xl sm:text-2xl text-white tracking-wide leading-tight">
-                {settings.company_name || 'M3M Properties'}
+            {/* <div className="hidden sm:flex flex-col justify-center">
+              <span className="font-serif text-base sm:text-lg font-bold text-white tracking-wider leading-none group-hover:text-amber-400 transition-colors">
+                {settings.company_name || 'M3M PROPERTIES'}
               </span>
-              <span className="block text-[10px] font-semibold text-amber-400 uppercase tracking-[0.2em]">
-                Luxury Real Estate Developer
+              <span className="text-[9px] font-semibold text-amber-400 tracking-[0.2em] uppercase mt-1">
+                Luxury Real Estate NCR
               </span>
-            </div>
+            </div> */}
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center gap-6">
+          <nav className="hidden lg:flex items-center gap-4 xl:gap-6">
             <Link
               to="/"
               onClick={handleLinkClick}
@@ -207,7 +222,7 @@ export const Header: React.FC = () => {
                       onClick={handleLinkClick}
                       className="text-[11px] font-bold text-amber-400 hover:text-amber-300 flex items-center gap-1 bg-amber-500/10 px-2 py-1 rounded-md border border-amber-500/20"
                     >
-                      <span>Explore All 5 Corridors</span>
+                      <span>Explore All 6 Corridors</span>
                       <ArrowRight className="w-3 h-3" />
                     </Link>
                   </div>
@@ -262,7 +277,7 @@ export const Header: React.FC = () => {
               </Link>
 
               {categoriesDropdownOpen && (
-                <div className="absolute top-full left-1/2 -translate-x-1/2 w-[440px] bg-slate-950/98 backdrop-blur-xl border border-amber-500/30 rounded-2xl p-4 shadow-2xl space-y-2 z-50 animate-in fade-in slide-in-from-top-2 duration-150">
+                <div className="absolute top-full left-1/2 -translate-x-1/2 w-[480px] bg-slate-950/98 backdrop-blur-xl border border-amber-500/30 rounded-2xl p-4 shadow-2xl space-y-2 z-50 animate-in fade-in slide-in-from-top-2 duration-150">
                   <div className="flex items-center justify-between pb-2.5 border-b border-slate-800 px-2">
                     <span className="text-xs font-bold text-amber-400 uppercase tracking-wider flex items-center gap-1.5">
                       <Layers className="w-3.5 h-3.5" />
@@ -273,7 +288,7 @@ export const Header: React.FC = () => {
                       onClick={handleLinkClick}
                       className="text-[11px] font-bold text-amber-400 hover:text-amber-300 flex items-center gap-1 bg-amber-500/10 px-2 py-1 rounded-md border border-amber-500/20"
                     >
-                      <span>All 34 Masterpieces</span>
+                      <span>All 60+ Masterpieces</span>
                       <ArrowRight className="w-3 h-3" />
                     </Link>
                   </div>
@@ -350,7 +365,7 @@ export const Header: React.FC = () => {
           </nav>
 
           {/* Desktop Direct Contact CTAs */}
-          <div className="hidden sm:flex items-center gap-3">
+          <div className="hidden sm:flex items-center gap-3">            
             <a
               href={whatsappLink}
               target="_blank"
@@ -383,7 +398,26 @@ export const Header: React.FC = () => {
 
       {/* Mobile Drawer */}
       {mobileMenuOpen && (
-        <div className="lg:hidden border-t border-slate-800 bg-slate-950 px-4 pt-3 pb-6 space-y-4 shadow-2xl max-h-[85vh] overflow-y-auto">
+        <div className="lg:hidden border-t border-slate-800 bg-slate-950 px-4 pt-4 pb-6 space-y-4 shadow-2xl max-h-[85vh] overflow-y-auto">
+          {/* Mobile Drawer Brand Badge */}
+          <div className="flex items-center gap-3 p-3 rounded-2xl bg-slate-900/80 border border-slate-800">
+            <div className="h-11 px-3 py-1 bg-white rounded-xl shadow-md border border-amber-400/40 flex items-center justify-center shrink-0">
+              <img
+                src={settings.logo_url || '/logo/m3m-logo.png'}
+                alt={settings.company_name || 'M3M Properties'}
+                className="h-7 w-auto max-w-[100px] object-contain"
+              />
+            </div>
+            <div>
+              <span className="block font-serif text-sm font-bold text-white tracking-wider">
+                {settings.company_name || 'M3M PROPERTIES'}
+              </span>
+              <span className="block text-[9px] font-semibold text-amber-400 uppercase tracking-[0.18em]">
+                Luxury Real Estate NCR
+              </span>
+            </div>
+          </div>
+
           <nav className="flex flex-col space-y-1">
             <Link
               to="/"
@@ -434,7 +468,7 @@ export const Header: React.FC = () => {
                 Asset Portfolios
               </Link>
               <Link to="/portfolio" onClick={handleLinkClick} className="text-[11px] text-amber-400 font-semibold underline">
-                All 34 Projects
+                All 60+ Projects
               </Link>
             </div>
             <div className="grid grid-cols-2 gap-2 px-1">
@@ -483,26 +517,42 @@ export const Header: React.FC = () => {
             </Link>
           </nav>
 
-          <div className="pt-2 border-t border-slate-800 grid grid-cols-2 gap-3">
-            <a
-              href={whatsappLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-emerald-600 text-white font-bold text-xs text-center shadow-xs"
+          <div className="pt-2 border-t border-slate-800 space-y-2">
+            <button
+              type="button"
+              onClick={() => {
+                setMobileMenuOpen(false);
+                setEnquiryModalOpen(true);
+              }}
+              className="w-full flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-slate-900 text-amber-400 border border-amber-500/40 font-bold text-xs text-center shadow-xs cursor-pointer"
             >
-              <MessageCircle className="w-4 h-4 fill-current" />
-              <span>WhatsApp</span>
-            </a>
-            <a
-              href={callLink}
-              className="flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-amber-500 text-slate-950 font-bold text-xs text-center shadow-xs"
-            >
-              <Phone className="w-4 h-4" />
-              <span>Call Concierge</span>
-            </a>
+              <Crown className="w-4 h-4 text-amber-400" />
+              <span>Enquire Now / VIP Deck</span>
+            </button>
+            <div className="grid grid-cols-2 gap-2">
+              <a
+                href={whatsappLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center gap-2 py-2.5 px-3 rounded-xl bg-emerald-600 text-white font-bold text-xs text-center shadow-xs"
+              >
+                <MessageCircle className="w-4 h-4 fill-current" />
+                <span>WhatsApp</span>
+              </a>
+              <a
+                href={callLink}
+                className="flex items-center justify-center gap-2 py-2.5 px-3 rounded-xl bg-amber-500 text-slate-950 font-bold text-xs text-center shadow-xs"
+              >
+                <Phone className="w-4 h-4" />
+                <span>Concierge</span>
+              </a>
+            </div>
           </div>
         </div>
       )}
+
+      {/* Quick Enquiry Modal */}
+      <QuickEnquiryModal isOpen={enquiryModalOpen} onClose={() => setEnquiryModalOpen(false)} />
     </header>
   );
 };

@@ -8,7 +8,7 @@ export const Footer: React.FC = () => {
   const { settings } = useSettings();
   const whatsappUrl = getWhatsAppUrl(
     settings.whatsapp_number,
-    'Hello, I would like more information on M3M Properties.'
+    'Hello, I would like more information on M3M Inventory.'
   );
   const phoneUrl = getPhoneCallUrl(settings.phone_number);
 
@@ -24,17 +24,22 @@ export const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Col 1: About Platform */}
           <div className="space-y-4">
-            <Link to="/" onClick={scrollToTop} className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-amber-500 via-amber-600 to-amber-700 flex items-center justify-center text-slate-950 font-black text-lg shadow-md shadow-amber-500/20 overflow-hidden">
-                {settings.logo_url ? (
-                  <img src={settings.logo_url} alt={settings.company_name || 'M3M'} className="w-full h-full object-cover" />
-                ) : (
-                  <span>M3M</span>
-                )}
+            <Link to="/" onClick={scrollToTop} className="flex items-center gap-3 group">
+              <div className="h-12 px-3.5 py-1 rounded-xl bg-white shadow-lg shadow-black/40 border border-amber-400/40 group-hover:border-amber-400 transition-all flex items-center justify-center shrink-0">
+                <img
+                  src={settings.logo_url || '/logo/m3m-logo.png'}
+                  alt={settings.company_name || 'M3M Properties'}
+                  className="h-8 w-auto max-w-[120px] object-contain transition-transform group-hover:scale-105"
+                />
               </div>
-              <span className="font-bold text-white text-lg leading-tight">
-                {settings.company_name || 'M3M Properties'}
-              </span>
+              <div className="flex flex-col justify-center">
+                <span className="font-serif text-lg font-bold text-white tracking-wider leading-tight group-hover:text-amber-400 transition-colors">
+                  {settings.company_name || 'M3M PROPERTIES'}
+                </span>
+                <span className="text-[10px] font-semibold text-amber-400 uppercase tracking-[0.2em]">
+                  Luxury Real Estate NCR
+                </span>
+              </div>
             </Link>
             <p className="text-xs sm:text-sm leading-relaxed text-slate-400">
               Magnificence in Men, Materials & Money. Delivering world-class architectural landmarks across Residential, Retail, Office, and Serviced Suites in Gurugram & NCR.
@@ -71,7 +76,7 @@ export const Footer: React.FC = () => {
               </li>
               <li>
                 <Link to="/portfolio" onClick={scrollToTop} className="text-amber-400 hover:text-amber-300 transition-colors font-semibold">
-                  Browse All 34 Developments →
+                  Browse All Developments →
                 </Link>
               </li>
             </ul>
@@ -103,7 +108,7 @@ export const Footer: React.FC = () => {
               </li>
               <li>
                 <Link to="/corridors" onClick={scrollToTop} className="text-amber-400 hover:text-amber-300 transition-colors font-semibold">
-                  Explore All 5 Corridors →
+                  Explore All Corridors →
                 </Link>
               </li>
               <li>
@@ -147,7 +152,7 @@ export const Footer: React.FC = () => {
         {/* Bottom copyright */}
         <div className="mt-14 pt-8 border-t border-slate-900 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
           <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-3 text-center sm:text-left">
-            <p>© {new Date().getFullYear()} {settings.company_name || 'M3M Properties'}. All rights reserved.</p>
+            <p>© {new Date().getFullYear()} {settings.company_name || 'M3M Inventory'}. All rights reserved.</p>
             <span className="hidden sm:inline text-slate-700">•</span>
             <p className="text-[11px] text-slate-400" itemScope itemType="https://schema.org/Organization">
               Created by{' '}

@@ -79,7 +79,7 @@ export const LocationsPage: React.FC = () => {
       <SEO
         title={selectedCategory === 'All' ? 'M3M Prime Corridors & Landmark Portfolios' : `M3M ${selectedCategory} Properties in Gurugram`}
         description="Explore iconic M3M residential, high-street retail, corporate office, and serviced suites developments across Golf Course Extn Rd, SPR, Dwarka Expressway, and MG Road."
-        keywords="m3m properties, m3m residential, m3m retail, m3m offices, golf course extension road, spr gurugram, dwarka expressway"
+        keywords="M3M Inventory, m3m residential, m3m retail, m3m offices, golf course extension road, spr gurugram, dwarka expressway"
         canonicalPath="/locations"
       />
 
@@ -135,7 +135,7 @@ export const LocationsPage: React.FC = () => {
                 <span>Asset Explorer</span>
               </div>
               <h2 className="font-serif-luxury text-2xl sm:text-3xl font-bold text-slate-900">
-                Explore All 34 M3M Properties
+                Explore All 34 M3M Inventory
               </h2>
             </div>
             <span className="text-xs font-semibold text-slate-500 bg-slate-100 px-3 py-1.5 rounded-lg border border-slate-200">

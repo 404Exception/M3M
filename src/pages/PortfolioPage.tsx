@@ -15,7 +15,6 @@ import {
   Crown,
   CheckCircle2,
   X,
-  Sparkles,
 } from 'lucide-react';
 import { api } from '../services/api.js';
 import { Location, Site } from '../types.js';
@@ -96,10 +95,11 @@ export const PortfolioPage: React.FC = () => {
 
   const categories = [
     { name: 'All', icon: Layers, label: 'All Portfolios' },
-    { name: 'Residential', icon: HomeIcon, label: 'Residences (15)' },
-    { name: 'Retail', icon: Store, label: 'High-Street Retail (14)' },
-    { name: 'Office', icon: Briefcase, label: 'Offices (4)' },
-    { name: 'Serviced Apartments', icon: Building, label: 'Serviced Suites (1)' },
+    { name: 'Residential', icon: HomeIcon, label: 'Residences' },
+    { name: 'Retail', icon: Store, label: 'Retail Promenades' },
+    { name: 'Office', icon: Briefcase, label: 'Corporate Offices' },
+    { name: 'Serviced Apartments', icon: Building, label: 'Serviced Suites' },
+    { name: 'Leasing', icon: Layers, label: 'Institutional Leasing' },
   ];
 
   // Filter and Sort Sites
@@ -153,8 +153,8 @@ export const PortfolioPage: React.FC = () => {
   const structuredData = {
     '@context': 'https://schema.org',
     '@type': 'ItemList',
-    name: 'M3M Properties – Complete Master Portfolio Directory',
-    description: 'Browse all 34 luxury residential, high-street retail, corporate office, and serviced suites developments by M3M.',
+    name: 'M3M Inventory – Complete Master Portfolio Directory',
+    description: 'Browse all 60+ luxury residential, high-street retail, corporate office, serviced suites, and institutional leasing developments by M3M.',
     itemListElement: allSites.map((site, idx) => ({
       '@type': 'ListItem',
       position: idx + 1,
@@ -166,9 +166,9 @@ export const PortfolioPage: React.FC = () => {
   return (
     <div className="space-y-12 sm:space-y-16 pb-16">
       <SEO
-        title={selectedCategory === 'All' ? 'M3M Master Portfolio Directory – All 34 Iconic Developments' : `M3M ${selectedCategory} Properties – Master Portfolio`}
-        description="Discover all 34 luxury residential mansions, high-street retail boulevards, Grade-A corporate towers & ultra-luxury serviced suites across Gurugram by M3M."
-        keywords="m3m portfolio, m3m all projects, m3m luxury apartments, m3m commercial shops, m3m offices gurugram"
+        title={selectedCategory === 'All' ? 'M3M Master Portfolio Directory – All 60+ Iconic Developments' : `M3M ${selectedCategory} Properties – Master Portfolio`}
+        description="Discover all 60+ luxury residential sky mansions, high-street retail boulevards, Grade-A corporate towers, ultra-luxury serviced suites & institutional leasing across Gurugram & NCR by M3M."
+        keywords="m3m portfolio, m3m all projects, m3m luxury apartments, m3m commercial shops, m3m offices gurugram, m3m leasing"
         canonicalPath="/portfolio"
         schemaData={structuredData}
       />
@@ -182,7 +182,7 @@ export const PortfolioPage: React.FC = () => {
           <div className="max-w-3xl space-y-4">
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/40 text-amber-400 text-xs font-semibold uppercase tracking-wider shadow-inner">
               <Crown className="w-4 h-4 text-amber-400" />
-              <span>Complete Master Portfolio • 34 Landmark Projects</span>
+              <span>Complete Master Portfolio • 60+ Landmark Projects</span>
             </div>
 
             <h1 className="font-serif-luxury text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.15] text-white">
@@ -195,22 +195,26 @@ export const PortfolioPage: React.FC = () => {
           </div>
 
           {/* Key Portfolio Metric Chips */}
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-3xl pt-2">
+          <div className="grid grid-cols-2 sm:grid-cols-5 gap-3 max-w-4xl pt-2">
             <div className="bg-slate-900/80 p-3 rounded-xl border border-slate-800 text-center">
-              <span className="block font-serif-luxury font-bold text-amber-400 text-xl">15</span>
+              <span className="block font-serif-luxury font-bold text-amber-400 text-xl">24</span>
               <span className="text-[11px] text-slate-400">Residences</span>
             </div>
             <div className="bg-slate-900/80 p-3 rounded-xl border border-slate-800 text-center">
-              <span className="block font-serif-luxury font-bold text-amber-400 text-xl">14</span>
+              <span className="block font-serif-luxury font-bold text-amber-400 text-xl">16</span>
               <span className="text-[11px] text-slate-400">Retail Promenades</span>
             </div>
             <div className="bg-slate-900/80 p-3 rounded-xl border border-slate-800 text-center">
-              <span className="block font-serif-luxury font-bold text-amber-400 text-xl">4</span>
+              <span className="block font-serif-luxury font-bold text-amber-400 text-xl">9</span>
               <span className="text-[11px] text-slate-400">Corporate Towers</span>
             </div>
             <div className="bg-slate-900/80 p-3 rounded-xl border border-slate-800 text-center">
-              <span className="block font-serif-luxury font-bold text-amber-400 text-xl">1</span>
-              <span className="text-[11px] text-slate-400">Serviced Suites (57Suites)</span>
+              <span className="block font-serif-luxury font-bold text-amber-400 text-xl">6</span>
+              <span className="text-[11px] text-slate-400">Serviced Suites</span>
+            </div>
+            <div className="bg-slate-900/80 p-3 rounded-xl border border-slate-800 text-center col-span-2 sm:col-span-1">
+              <span className="block font-serif-luxury font-bold text-amber-400 text-xl">5</span>
+              <span className="text-[11px] text-slate-400">Leasing Solutions</span>
             </div>
           </div>
         </div>

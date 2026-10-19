@@ -927,7 +927,7 @@ export const AdminSiteFormPage: React.FC = () => {
         </div>
 
         {/* Section 5: Available Unit Configurations & Inventory */}
-        <div className="bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 shadow-xs space-y-6">
+        {/* <div className="bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 shadow-xs space-y-6">
           <div className="border-b border-slate-100 pb-3 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
             <div>
               <h2 className="font-bold text-slate-900 text-base">5. Unit Configurations & Inventory</h2>
@@ -1019,7 +1019,7 @@ export const AdminSiteFormPage: React.FC = () => {
               </tbody>
             </table>
           </div>
-        </div>
+        </div> */}
 
         {/* Bottom Save Action */}
         <div className="flex items-center justify-end gap-3 pt-4 border-t border-slate-200">

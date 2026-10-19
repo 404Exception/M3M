@@ -79,7 +79,7 @@ export const SiteListingPage: React.FC = () => {
   const itemListSchema = {
     '@context': 'https://schema.org',
     '@type': 'ItemList',
-    name: `M3M Properties in ${location.name}, ${location.city}`,
+    name: `M3M Inventory in ${location.name}, ${location.city}`,
     description: `Iconic M3M luxury residences, retail avenues, and Grade-A offices in ${location.name}.`,
     itemListElement: sites.map((s, idx) => ({
       '@type': 'ListItem',

@@ -141,9 +141,9 @@ export class DataRepository {
           phone_number: process.env.DEFAULT_PHONE_NUMBER || process.env.PHONE_NUMBER || '+91 98765 43210',
           company_address: 'M3M Experion Center, Golf Course Extension Road, Sector 65, Gurugram, Haryana - 122018',
           email: 'concierge@m3mproperties.com',
-          logo_url: '',
+          logo_url: '/logo/m3m-logo.png',
           business_hours: 'Mon - Sun: 9:00 AM - 8:00 PM',
-          hero_headline: 'Magnificence in Men, Materials & Money – M3M Properties',
+          hero_headline: 'Magnificence in Men, Materials & Money – M3M Inventory',
           hero_subheadline: 'Discover iconic luxury residences, high-street retail promenades, Grade-A corporate towers & ultra-luxury serviced suites across Gurugram & NCR.',
         };
         for (const [key, value] of Object.entries(defaults)) {
@@ -732,7 +732,7 @@ export class DataRepository {
       email: envEmail.trim() || 'concierge@m3mproperties.com',
       company_address: envAddress.trim() || 'M3M Experion Center, Golf Course Extension Road, Sector 65, Gurugram, Haryana - 122018',
       business_hours: 'Mon - Sun: 9:00 AM - 8:00 PM',
-      logo_url: '',
+      logo_url: '/logo/m3m-logo.png',
     };
 
     const settingsList = await prisma.setting.findMany();

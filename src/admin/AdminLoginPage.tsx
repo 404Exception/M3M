@@ -32,14 +32,14 @@ export const AdminLoginPage: React.FC = () => {
   return (
     <div className="min-h-screen bg-slate-950 flex flex-col justify-center py-12 sm:px-6 lg:px-8 font-['Plus_Jakarta_Sans',sans-serif]">
       <div className="sm:mx-auto sm:w-full sm:max-w-md text-center space-y-3 px-4">
-        <div className="inline-flex w-14 h-14 rounded-2xl bg-gradient-to-br from-amber-500 to-amber-700 items-center justify-center text-slate-950 font-black text-2xl shadow-xl shadow-amber-500/20 border border-amber-400/30">
-          M
+        <div className="inline-flex h-16 px-6 py-2 rounded-2xl bg-white shadow-2xl shadow-black/50 border border-amber-400/40 items-center justify-center">
+          <img src="/logo/m3m-logo.png" alt="M3M Properties" className="h-11 w-auto max-w-[150px] object-contain" />
         </div>
         <h1 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
           M3M Executive Portal
         </h1>
         <p className="text-xs sm:text-sm text-amber-400/80 font-medium">
-          M3M Properties Portfolio Management System
+          M3M Portfolio Management System
         </p>
       </div>
 

@@ -53,8 +53,10 @@ export const AdminLayout: React.FC = () => {
       {/* Mobile Header Bar */}
       <div className="md:hidden bg-slate-950 text-white px-4 py-3 flex items-center justify-between border-b border-slate-800">
         <div className="flex items-center gap-2.5">
-          <Building2 className="w-5 h-5 text-amber-400" />
-          <span className="font-bold text-sm">M3M Executive Portal</span>
+          <div className="h-8 px-2 py-0.5 rounded-lg bg-white border border-amber-400/40 flex items-center justify-center shrink-0">
+            <img src="/logo/m3m-logo.png" alt="M3M" className="h-5 w-auto object-contain" />
+          </div>
+          <span className="font-bold text-sm">M3M Executive</span>
         </div>
         <button
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -73,8 +75,12 @@ export const AdminLayout: React.FC = () => {
         {/* Sidebar Brand */}
         <div className="p-6 border-b border-slate-800/80">
           <Link to="/admin" className="flex items-center gap-3">
-            <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-amber-500 to-amber-700 flex items-center justify-center text-slate-950 font-extrabold shadow-sm">
-              M
+            <div className="h-10 px-3 py-1 rounded-xl bg-white shadow-md border border-amber-400/40 flex items-center justify-center shrink-0">
+              <img
+                src="/logo/m3m-logo.png"
+                alt="M3M Executive"
+                className="h-6 w-auto max-w-[90px] object-contain"
+              />
             </div>
             <div>
               <span className="block font-extrabold text-white text-base tracking-tight leading-tight">

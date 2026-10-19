@@ -242,9 +242,37 @@ export const AdminSettingsPage: React.FC = () => {
                   type="text"
                   value={companyName}
                   onChange={(e) => setCompanyName(e.target.value)}
-                  placeholder="M3M Properties India"
+                  placeholder="M3M Properties"
                   className="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-hidden focus:ring-2 focus:ring-amber-500 focus:bg-white font-medium"
                 />
+              </div>
+
+              <div className="sm:col-span-2">
+                <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">
+                  Brand Logo Asset URL (or local path)
+                </label>
+                <div className="flex items-center gap-3">
+                  <input
+                    type="text"
+                    value={logoUrl}
+                    onChange={(e) => setLogoUrl(e.target.value)}
+                    placeholder="/logo/m3m-logo.png"
+                    className="flex-1 px-3.5 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-hidden focus:ring-2 focus:ring-amber-500 focus:bg-white font-mono text-xs"
+                  />
+                  <div className="h-11 px-3 py-1 bg-white border border-slate-300 rounded-xl flex items-center justify-center shrink-0 shadow-xs">
+                    <img
+                      src={logoUrl || '/logo/m3m-logo.png'}
+                      alt="Logo preview"
+                      className="h-8 w-auto max-w-[110px] object-contain"
+                      onError={(e) => {
+                        (e.target as HTMLImageElement).src = '/logo/m3m-logo.png';
+                      }}
+                    />
+                  </div>
+                </div>
+                <p className="text-[11px] text-slate-400 mt-1">
+                  Default asset: <code className="text-amber-700 font-semibold">/logo/m3m-logo.png</code>. You can also provide an external HTTPS image URL.
+                </p>
               </div>
 
               <div className="sm:col-span-2">

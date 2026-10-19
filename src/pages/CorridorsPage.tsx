@@ -311,8 +311,9 @@ export const CorridorsPage: React.FC = () => {
                                 {site.name}
                               </strong>
                             </div>
-                            <span className="text-[10px] text-slate-500 group-hover/site:text-slate-900 font-medium line-clamp-1">
-                              {site.startingPrice || 'Price on Req'}
+                            <span className="text-[10px] text-amber-600 group-hover/site:text-slate-950 font-bold line-clamp-1 flex items-center gap-1">
+                              <span>Explore Landmark</span>
+                              <ArrowRight className="w-2.5 h-2.5" />
                             </span>
                           </Link>
                         ))}

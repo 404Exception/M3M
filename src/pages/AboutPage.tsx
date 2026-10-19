@@ -60,9 +60,9 @@ export const AboutPage: React.FC = () => {
   // Parse FAQs from settings if available
   let faqList = [
     {
-      question: 'What property categories are developed by M3M Properties?',
+      question: 'What property categories are developed by M3M Inventory?',
       answer:
-        'M3M Properties develops four core asset classes in NCR: Ultra-Luxury Residential Condominiums (Altitude, Golf Hills, Antalya Hills, OPUS, Golfestate), High-Street Retail & Commercial (Jewel, Urbana, Broadway, 65th Avenue), Grade-A Corporate Office Towers (M3M IFC, CFC, Jewel Offices), and Managed Serviced Apartments (M3M 57Suites).',
+        'M3M Inventory develops four core asset classes in NCR: Ultra-Luxury Residential Condominiums (Altitude, Golf Hills, Antalya Hills, OPUS, Golfestate), High-Street Retail & Commercial (Jewel, Urbana, Broadway, 65th Avenue), Grade-A Corporate Office Towers (M3M IFC, CFC, Jewel Offices), and Managed Serviced Apartments (M3M 57Suites).',
     },
     {
       question: 'Where are M3M projects located in Gurugram?',
@@ -70,7 +70,7 @@ export const AboutPage: React.FC = () => {
         'M3M projects are located on the most high-growth infrastructure corridors in Gurugram: Golf Course Extension Road (Sectors 65, 66, 67, 68), Southern Peripheral Road (Sectors 71, 73, 74), Dwarka Expressway (Sectors 84, 89, 107), and Central MG Road (Sector 25).',
     },
     {
-      question: 'Are all M3M properties RERA registered and bank approved?',
+      question: 'Are all M3M Inventory RERA registered and bank approved?',
       answer:
         'Yes, all M3M residential, retail, office, and serviced suite developments are 100% registered with the Haryana Real Estate Regulatory Authority (HARERA) and approved by major financial institutions including HDFC Bank, ICICI Bank, and State Bank of India.',
     },
@@ -108,7 +108,7 @@ export const AboutPage: React.FC = () => {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-16 space-y-16">
       <SEO
-        title="About M3M Properties – Vision, Leadership & Luxury Portfolio"
+        title="About M3M Inventory – Vision, Leadership & Luxury Portfolio"
         description="Discover M3M India – Magnificence in Men, Materials & Money. Learn about our architectural legacy, 30M+ sq.ft delivered track record, and prime NCR corridors."
         canonicalPath="/about"
         schemaData={faqSchema}

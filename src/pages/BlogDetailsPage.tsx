@@ -71,8 +71,8 @@ export const BlogDetailsPage: React.FC = () => {
   };
 
   const whatsappMessage = blog
-    ? `Hello, I read your analysis "${blog.title}" on M3M Properties. I would like to schedule a private walkthrough and receive the luxury investor kit.`
-    : 'Hello, I would like to get detailed information regarding M3M Properties luxury projects.';
+    ? `Hello, I read your analysis "${blog.title}" on M3M Inventory. I would like to schedule a private walkthrough and receive the luxury investor kit.`
+    : 'Hello, I would like to get detailed information regarding M3M Inventory luxury projects.';
 
   const whatsappUrl = getWhatsAppUrl(settings.whatsapp_number, whatsappMessage);
   const phoneCallUrl = getPhoneCallUrl(settings.phone_number);
@@ -133,7 +133,7 @@ export const BlogDetailsPage: React.FC = () => {
     },
     publisher: {
       '@type': 'Organization',
-      name: settings.company_name || 'M3M Properties',
+      name: settings.company_name || 'M3M Inventory',
       logo: {
         '@type': 'ImageObject',
         url: settings.logo_url || 'https://images.unsplash.com/photo-1590247813693-5541d1c609fd?auto=format&fit=crop&w=800&q=80',
@@ -418,11 +418,9 @@ export const BlogDetailsPage: React.FC = () => {
                       <p className="text-[11px] text-slate-500 truncate">
                         {site.address}
                       </p>
-                      {site.startingPrice && (
-                        <span className="text-xs font-bold text-amber-700 block mt-1">
-                          From {site.startingPrice}
-                        </span>
-                      )}
+                      <span className="text-[11px] font-bold text-amber-600 block mt-1 group-hover:text-amber-700">
+                        Explore Landmark →
+                      </span>
                     </Link>
                   ))}
                 </div>

@@ -1,5 +1,5 @@
 {
-  "name": "M3M Properties",
+  "name": "M3M Inventory",
   "description": "Ultra-luxury residential, high-street retail, Grade-A corporate office & serviced suites portal with verified inventory, unit dimensions, and instant WhatsApp & concierge inquiries.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]

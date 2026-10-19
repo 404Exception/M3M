@@ -10,10 +10,10 @@ export interface SEOProps {
   schemaData?: Record<string, any> | Array<Record<string, any>>;
 }
 
-const DEFAULT_TITLE = 'M3M Properties – Luxury Residential, Retail & Office Spaces in Gurugram';
+const DEFAULT_TITLE = 'M3M Inventory – Luxury Residential, Retail & Office Spaces in Gurugram';
 const DEFAULT_DESCRIPTION = 'Explore iconic luxury residences, high-street retail promenades, Grade-A corporate towers & ultra-luxury serviced suites across Gurugram & NCR by M3M.';
 const DEFAULT_IMAGE = 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1200&q=80';
-const DEFAULT_KEYWORDS = 'm3m properties, m3m india, m3m gurugram, m3m altitude, m3m golf hills, m3m jewel, m3m urbana, m3m ifc, luxury apartments gurugram, golf course extension road, retail shops gurugram';
+const DEFAULT_KEYWORDS = 'M3M Inventory, m3m india, m3m gurugram, m3m altitude, m3m golf hills, m3m jewel, m3m urbana, m3m ifc, luxury apartments gurugram, golf course extension road, retail shops gurugram';
 
 export const SEO: React.FC<SEOProps> = ({
   title,
@@ -27,7 +27,7 @@ export const SEO: React.FC<SEOProps> = ({
   useEffect(() => {
     // 1. Page Title
     const fullTitle = title 
-      ? (title.includes('M3M') ? title : `${title} | M3M Properties`)
+      ? (title.includes('M3M') ? title : `${title} | M3M Inventory`)
       : DEFAULT_TITLE;
     document.title = fullTitle;
 
@@ -71,7 +71,7 @@ export const SEO: React.FC<SEOProps> = ({
     setMetaTag('property', 'og:type', ogType);
     setMetaTag('property', 'og:image', finalImage);
     setMetaTag('property', 'og:url', currentUrl);
-    setMetaTag('property', 'og:site_name', 'M3M Properties');
+    setMetaTag('property', 'og:site_name', 'M3M Inventory');
 
     // Twitter Card
     setMetaTag('name', 'twitter:card', 'summary_large_image');
@@ -104,7 +104,7 @@ export const SEO: React.FC<SEOProps> = ({
       const defaultSchema = {
         '@context': 'https://schema.org',
         '@type': 'RealEstateAgent',
-        name: 'M3M Properties Concierge & Sales Desk',
+        name: 'M3M Inventory Concierge & Sales Desk',
         url: currentOrigin,
         logo: finalImage,
         description: finalDescription,

@@ -6,11 +6,13 @@ import { MessageCircle, Phone } from 'lucide-react';
 import { useSettings } from '../context/SettingsContext.js';
 import { getWhatsAppUrl, getPhoneCallUrl } from '../utils/contact.js';
 
+import { FloatingConcierge } from './FloatingConcierge.js';
+
 export const PublicLayout: React.FC = () => {
   const { settings } = useSettings();
   const whatsappUrl = getWhatsAppUrl(
     settings.whatsapp_number,
-    'Hello, I am interested in exploring M3M Properties (Residential, Retail, Office, Serviced Suites). Please share details.'
+    'Hello, I am interested in exploring M3M Inventory (Residential, Retail, Office, Serviced Suites). Please share details.'
   );
   const phoneUrl = getPhoneCallUrl(settings.phone_number);
 
@@ -23,6 +25,11 @@ export const PublicLayout: React.FC = () => {
       <main className="flex-1">
         <Outlet />
       </main>
+
+      {/* Floating Desktop VIP Concierge */}
+      <div className="hidden sm:block">
+        <FloatingConcierge />
+      </div>
 
       {/* Footer */}
       <Footer />
